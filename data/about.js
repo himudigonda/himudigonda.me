@@ -1,8 +1,4 @@
-// jobTitle: 'Founder & CEO',
-// company: 'Resend',
-// companyUrl: 'https://resend.com',
-// startDate: '2023-01-01',
-// location: 'San Francisco, California',
+
 const items = [
   {
     jobTitle: 'Staff Machine Learning Intern, Health',
@@ -10,6 +6,13 @@ const items = [
     startDate: '2024-04-01',
     endDate: '2024-08-31',
     location: 'Remote - Mumbai, India'
+  },
+  {
+    jobTitle: 'Machine Learning Researcher, Medical Image Analysis',
+    company: 'Professor Jianming Liang',
+    startDate: '2023-09-01',
+    endDate: '2024-08-19',
+    location: 'Arizona State University, Tempe, USA'
   },
   {
     jobTitle: 'Machine Learning, Software Development',

@@ -1,8 +1,4 @@
-// jobTitle: 'Founder & CEO',
-// company: 'Resend',
-// companyUrl: 'https://resend.com',
-// startDate: '2023-01-01',
-// location: 'San Francisco, California',
+
 const items = [
   {
     jobTitle: 'Herbold ASU Graduate Scholarship',

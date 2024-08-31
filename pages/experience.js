@@ -71,22 +71,6 @@ function Experience(props) {
 
         return durationStr
     }
-
-    const downloadHeadshot = () => {
-        setToastTitle('Downloading...')
-        setToastDescription('You can now add this photo to your fancy site.')
-        setShowToast(true)
-    }
-
-    const copyBio = e => {
-        e.preventDefault()
-        navigator.clipboard.writeText(description)
-
-        setToastTitle('Copied :D')
-        setToastDescription('You can now paste it anywhere.')
-        setShowToast(true)
-    }
-
     return (
         <>
 

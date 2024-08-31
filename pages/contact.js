@@ -10,7 +10,6 @@ export async function getStaticProps() {
   const meta = {
     title: 'Contact // Himansh Mudigonda',
     tagline: 'Drop a message!',
-    image: '/static/images/reminder-bw.jpg',
     primaryColor: 'cyan',
     secondaryColor: 'green',
   }

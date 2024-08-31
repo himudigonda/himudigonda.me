@@ -145,7 +145,7 @@ export default function CommandBar(props) {
       shortcut: ['g', 'h'],
       keywords: 'go-home',
       section: 'Go To',
-      perform: () => router.push('/home'),
+      perform: () => router.push('/'),
       icon: <Lottie lottieRef={honorsRef} style={iconSize} animationData={charmIcon} loop={false} autoplay={false} />,
     },
   ]

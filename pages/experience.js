@@ -18,7 +18,6 @@ export async function getStaticProps() {
         props: {
             title: 'Articles // Himansh Mudigonda',
             tagline: 'Growth. Impact. Vision.',
-            image: '/static/images/articles-bw.jpg',
             primaryColor: 'green',
             secondaryColor: 'purple',
         },

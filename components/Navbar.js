@@ -14,6 +14,8 @@ export default function Navbar() {
     'Projects',
     'Articles',
     'Honors',
+    'Contact',
+    'Values'
   ]
   const [hovered, setHovered] = useState('')
   const { query } = useKBar()

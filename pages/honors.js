@@ -8,11 +8,38 @@ import { ButtonPrimary } from '../components/ButtonPrimary'
 import Pronunciation from '../components/Pronunciation'
 import Toast from '../components/Toast'
 import stripHtml from '../lib/strip-html'
-import items from '../data/about'
+// import items from '../data/about'
+import items from '../data/honors'
 import Lottie from 'lottie-react'
 import copyBioIcon from '../public/static/icons/copy-bio.json'
 import downloadIcon from '../public/static/icons/download.json'
+export async function getStaticProps() {
+    // const allPosts = getAllPosts(['date', 'skip', 'slug', 'title'])
 
+    const featuredParams = [
+        'date',
+        'slug',
+        'title',
+        'image',
+        'content',
+        'description',
+    ]
+
+    const featuredPosts = [
+    ]
+
+    return {
+        props: {
+            title: 'Articles // Himansh Mudigonda',
+            tagline: 'Respect. Power. Banana.',
+            image: '/static/images/articles-bw.jpg',
+            primaryColor: 'yellow',
+            secondaryColor: 'pink',
+            // featuredPosts,
+            // allPosts,
+        },
+    }
+}
 
 function Honors(props) {
     const renderAll = () => {
@@ -34,8 +61,8 @@ function Honors(props) {
                                 ? format(parseISO(item.endDate), 'LLL yyyy')
                                 : 'Present'}
                         </span>
-                        <span> • </span>
-                        <span>{getDuration(item.startDate, item.endDate)}</span>
+                        {/* <span> • </span> */}
+                        {/* <span>{getDuration(item.startDate, item.endDate)}</span> */}
                     </p>
                 </div>
             )
@@ -63,10 +90,21 @@ function Honors(props) {
 
 
 
+    const { title, image } = props
+    const description = `Here are a few of my honors, awards, scholarships and certifications</strong>.`
+
     return (
         <>
+            <Head>
+                <title>{title}</title>
+                <meta content={title} property="og:title" />
+                <meta content={stripHtml(description)} name="description" />
+                <meta content={stripHtml(description)} property="og:description" />
+                <meta content="https://himudigonda.me/articles" property="og:url" />
+                <meta content={`https://himudigonda.me${image}`} property="og:image" />
+            </Head>
 
-            <h2>Career</h2>
+            <h2>Scholarships, Awards, and Certifications</h2>
             {renderAll()}
         </>
     )

@@ -4,7 +4,7 @@ const items = [
     jobTitle: 'Staff Machine Learning Intern, Health',
     company: 'Endimension LLC',
     startDate: '2024-04-01',
-    endDate: '2024-08-31',
+    endDate: '',
     location: 'Remote - Mumbai, India'
   },
   {
@@ -31,14 +31,14 @@ const items = [
   {
     jobTitle: 'Python and DSA Teaching Assistant',
     company: 'School of Engineering and Applied Sciences',
-    startDate: '2022-10-01',
+    startDate: '2021-08-01',
     endDate: '2023-07-31',
     location: 'SRM University, Amaravathi, India'
   },
   {
     jobTitle: 'Cognitive AI Researcher, Machine Learning',
     company: 'NeXtTech LLC',
-    startDate: '2022-07-01',
+    startDate: '2019-11-01',
     endDate: '2022-10-31',
     location: 'Chennai, India'
   }

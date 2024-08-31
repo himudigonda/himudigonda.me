@@ -148,7 +148,7 @@ function About(props) {
             onMouseLeave={() => downloadRef2.current?.stop()}
           >
             <Lottie lottieRef={downloadRef2} style={iconStyle} animationData={downloadIcon} loop={false} autoplay={false} />
-            {countdown > 0 ? `Downloading in ${countdown}...` : 'View Resume'}
+            {countdown > 0 ? `Viewing in ${countdown}...` : 'View Resume'}
           </ButtonPrimary>
         </ButtonsContainer>
       </div>

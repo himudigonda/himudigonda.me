@@ -18,7 +18,7 @@ export async function getStaticProps() {
     title: 'About // Zeno Rocha',
     description:
       "Himansh Mudigonda is a high-achieving graduate student in Computer Science, recognized for his academic excellence and passion for machine learning. He has demonstrated his ability to innovate through impactful projects, including the development of a groundbreaking non-invasive blood glucose detection model and achieving state-of-the-art results in chest X-ray disease prediction. He is a driven learner with a strong command of programming languages, machine learning frameworks, and cloud technologies, positioning him for continued success in the field.",
-    tagline: 'Create. Share. Repeat.',
+    tagline: 'Innovate. Learn. Excel.',
     image: '/static/images/about-bw.jpg',
     primaryColor: 'pink',
     secondaryColor: 'purple',
@@ -111,32 +111,6 @@ function About(props) {
     )
   }
 
-  const renderAll = () => {
-    return items.map((item, index) => {
-      return (
-        <div style={{ marginBottom: 40 }} key={index}>
-          <h3>{item.jobTitle}</h3>
-          <p style={{ margin: 0 }}>
-            <a href={item.companyUrl} target="_blank">
-              {item.company}
-            </a>
-            <span> • {item.location}</span>
-          </p>
-          <p style={{ margin: 0 }}>
-            <span>{format(parseISO(item.startDate), 'LLL yyyy')}</span>
-            <span> – </span>
-            <span>
-              {item.endDate
-                ? format(parseISO(item.endDate), 'LLL yyyy')
-                : 'Present'}
-            </span>
-            <span> • </span>
-            <span>{getDuration(item.startDate, item.endDate)}</span>
-          </p>
-        </div>
-      )
-    })
-  }
 
   const getDuration = (startDate, endDate) => {
     const durationObj = intervalToDuration({
@@ -187,9 +161,6 @@ function About(props) {
 
       <h2>Bio</h2>
       {renderBio()}
-
-      <h2>Career</h2>
-      {renderAll()}
 
       <Toast
         title={toastTitle}

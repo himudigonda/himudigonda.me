@@ -10,22 +10,22 @@ export default function Footer() {
     },
     {
       title: 'Twitter',
-      url: 'https://twitter.com/zenorocha',
+      url: 'https://twitter.com/himudigonda',
       icon: 'ri-twitter-line',
     },
     {
       title: 'GitHub',
-      url: 'https://github.com/zenorocha',
+      url: 'https://github.com/himudigonda',
       icon: 'ri-github-line',
     },
     {
       title: 'linkedin',
-      url: 'https://linkedin.com/in/zenorocha',
+      url: 'https://linkedin.com/in/himudigonda',
       icon: 'ri-linkedin-line',
     },
     {
       title: 'Instagram',
-      url: 'https://instagram.com/zenorocha',
+      url: 'https://instagram.com/himudigondaa',
       icon: 'ri-instagram-line',
     },
   ]

@@ -8,6 +8,13 @@ const items = [
     location: 'Remote - Mumbai, India'
   },
   {
+    jobTitle: 'Teaching Assistant and Grader',
+    company: 'Professor Jianming Liang',
+    startDate: '2024-05-01',
+    endDate: '2024-08-02',
+    location: 'Arizona State University, Tempe, USA'
+  },
+  {
     jobTitle: 'Machine Learning Researcher, Medical Image Analysis',
     company: 'Professor Jianming Liang',
     startDate: '2023-09-01',
@@ -19,7 +26,14 @@ const items = [
     company: 'SRM Advanced Electronics Laboratory',
     startDate: '2022-10-01',
     endDate: '2023-07-31',
-    location: 'Amaravathi, India'
+    location: 'SRM University, Amaravathi, India'
+  },
+  {
+    jobTitle: 'Python and DSA Teaching Assistant',
+    company: 'School of Engineering and Applied Sciences',
+    startDate: '2022-10-01',
+    endDate: '2023-07-31',
+    location: 'SRM University, Amaravathi, India'
   },
   {
     jobTitle: 'Cognitive AI Researcher, Machine Learning',

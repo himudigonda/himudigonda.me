@@ -21,7 +21,7 @@ export async function getStaticProps() {
 
 function Projects(props) {
   const renderFeatured = () => {
-    const featured = ['Dracula', 'Clipboard.js', 'Resend', 'React Email']
+    const featured = ['Llama-Bots', 'Parallel Computing Tutorials', 'OpenForensics-DeepFake']
 
     return items
       .map(item => {
@@ -64,7 +64,7 @@ function Projects(props) {
   }
 
   const { title, image } = props
-  const description = `I'm passionate about applying my skills to real-world challenges through side projects. Here, you'll find the <strong>${getTotalProjects()}</strong> of my best work in machine learning, showcasing my ability to innovate and solve complex problems. Some projects are still active, others have been discontinued.`
+  const description = `I'm passionate about applying my skills to real-world challenges through side projects. Here, you'll find the <strong>${getTotalProjects()}</strong> of my best works in the fields of machine learning, computer science, automation and more, showcasing my ability to innovate and solve complex problems. Some projects are still active, others have been discontinued.`
 
   return (
     <>
@@ -73,8 +73,8 @@ function Projects(props) {
         <meta content={title} property="og:title" />
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
-        <meta content="https://zenorocha.com/projects" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://himudigonda.me/projects" property="og:url" />
+        <meta content={`https://himudigonda.me${image}`} property="og:image" />
       </Head>
 
       <AnimateSharedLayout>

@@ -15,7 +15,7 @@ import downloadIcon from '../public/static/icons/download.json'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'About // Zeno Rocha',
+    title: 'About // Himansh Mudigonda',
     description:
       "Himansh Mudigonda is a high-achieving graduate student in Computer Science, recognized for his academic excellence and passion for machine learning. He has demonstrated his ability to innovate through impactful projects, including the development of a groundbreaking non-invasive blood glucose detection model and achieving state-of-the-art results in chest X-ray disease prediction. He is a driven learner with a strong command of programming languages, machine learning frameworks, and cloud technologies, positioning him for continued success in the field.",
     tagline: 'Innovate. Learn. Excel.',
@@ -40,7 +40,7 @@ function About(props) {
       <Container>
         <Section>
           <Image
-            alt="Zeno"
+            alt="Himansh"
             src="/static/images/avatar.jpg"
             width="336"
             height="336"
@@ -153,8 +153,8 @@ function About(props) {
         <meta content={title} property="og:title" />
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
-        <meta content="https://zenorocha.com/about" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://himudigonda.me/about" property="og:url" />
+        <meta content={`https://himudigonda.me${image}`} property="og:image" />
       </Head>
 
       {renderIntro()}

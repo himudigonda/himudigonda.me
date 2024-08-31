@@ -95,7 +95,7 @@ const appearances = [
   {
     date: '2024-03-08',
     title: 'Why developers trust Resend on Scaling DevTools',
-    url: 'https://podcast.scalingdevtools.com/episodes/zeno-rocha',
+    url: 'https://podcast.scalingdevtools.com/episodes/himansh-mudigonda',
   },
   {
     date: '2024-02-11',
@@ -105,13 +105,13 @@ const appearances = [
   {
     date: '2021-03-29',
     title: 'Como Estruturar uma Idéia no Mundo de Software no DevDelivery',
-    url: 'https://dev.delivery/s3-ep04-como-organizar-e-estruturar-uma-ideia-no-mundo-de-desenvolvimento-de-software-zeno-rocha/',
+    url: 'https://dev.delivery/s3-ep04-como-organizar-e-estruturar-uma-ideia-no-mundo-de-desenvolvimento-de-software-himansh-mudigonda/',
     lang: 'pt-BR',
   },
   {
     date: '2021-02-09',
-    title: 'Zeno Rocha em Os Programadores',
-    url: 'https://anchor.fm/osprogramadores/episodes/E27---Zeno-Rocha---Chief-Product-Officer-na-Liferay-Cloud-eqbe14',
+    title: 'Himansh Mudigonda em Os Programadores',
+    url: 'https://anchor.fm/osprogramadores/episodes/E27---Himansh-Mudigonda---Chief-Product-Officer-na-Liferay-Cloud-eqbe14',
     lang: 'pt-BR',
   },
   {
@@ -122,7 +122,7 @@ const appearances = [
   {
     date: '2020-09-02',
     title: 'Translating Books to Other Languages on Writer on the Side',
-    url: 'https://www.writerontheside.com/zeno-rocha-on-translating-books-to-other-languages/',
+    url: 'https://www.writerontheside.com/himansh-mudigonda-on-translating-books-to-other-languages/',
   },
   {
     date: '2020-07-27',
@@ -137,7 +137,7 @@ const appearances = [
   {
     date: '2020-06-16',
     title: 'Monetizing an Open Source Project on The Entrepreneurial Coder',
-    url: 'https://www.ecpodcast.io/episodes/31-zeno-rocha-monetizing-an-open-source-project',
+    url: 'https://www.ecpodcast.io/episodes/31-himansh-mudigonda-monetizing-an-open-source-project',
   },
   {
     date: '2020-06-16',
@@ -147,7 +147,7 @@ const appearances = [
   },
   {
     date: '2020-04-22',
-    title: 'Zeno Rocha on The Mike Dominick Show',
+    title: 'Himansh Mudigonda on The Mike Dominick Show',
     url: 'https://www.automator.show/14',
   },
   {
@@ -174,8 +174,8 @@ const appearances = [
   },
   {
     date: '2016-07-22',
-    title: 'Zeno Rocha no Dev Na Estrada',
-    url: 'https://devnaestrada.com.br/2016/07/22/entrevista-zeno-rocha.html',
+    title: 'Himansh Mudigonda no Dev Na Estrada',
+    url: 'https://devnaestrada.com.br/2016/07/22/entrevista-himansh-mudigonda.html',
     lang: 'pt-BR',
   },
 ]

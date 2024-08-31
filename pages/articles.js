@@ -21,13 +21,12 @@ export async function getStaticProps() {
   ]
 
   const featuredPosts = [
-    getPostBySlug('the-two-types-of-quality', featuredParams),
-    getPostBySlug('how-is-life-post-yc', featuredParams),
+    getPostBySlug('GroqRAG', featuredParams),
   ]
 
   return {
     props: {
-      title: 'Articles // Zeno Rocha',
+      title: 'Articles // Himansh Mudigonda',
       tagline: 'Stories. Updates. Guides.',
       image: '/static/images/articles-bw.jpg',
       primaryColor: 'yellow',
@@ -82,8 +81,8 @@ function Articles(props) {
         <meta content={title} property="og:title" />
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
-        <meta content="https://zenorocha.com/articles" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://himudigonda.me/articles" property="og:url" />
+        <meta content={`https://himudigonda.me${image}`} property="og:image" />
       </Head>
 
       <AnimateSharedLayout>

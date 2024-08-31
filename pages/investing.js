@@ -8,7 +8,7 @@ import investments from '../data/investments'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'Investing // Zeno Rocha',
+    title: 'Investing // Himansh Mudigonda',
     description:
       "<strong>Angel investing</strong> is how I help other startups to create amazing developer experiences. I'm excited to enable teams to grow and <strong>build world-class products</strong>.",
     tagline: 'DevTools. B2B. SaaS.',
@@ -36,8 +36,8 @@ function Investing(props) {
         <meta content={title} property="og:title" />
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
-        <meta content="https://zenorocha.com/investing" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://himudigonda.me/investing" property="og:url" />
+        <meta content={`https://himudigonda.me${image}`} property="og:image" />
       </Head>
 
       <p dangerouslySetInnerHTML={{ __html: description }} />

@@ -10,8 +10,8 @@ import { getPersonJsonLd } from '../lib/json-ld'
 export async function getStaticProps() {
   return {
     props: {
-      title: 'Zeno Rocha',
-      description: 'Obsessed with developer experience',
+      title: 'Himansh Mudigonda',
+      description: 'Herbold ASU Graduate Scholarship 2024 | ASU Engineering Graduate Fellowship 2024',
       image: '/static/images/home-bw.jpg',
     },
   }
@@ -27,8 +27,8 @@ export default function Index(props) {
         <meta content={title} property="og:title" />
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />
-        <meta content="https://zenorocha.com" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://himudigonda.me" property="og:url" />
+        <meta content={`https://himudigonda.me${image}`} property="og:image" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -45,8 +45,8 @@ export default function Index(props) {
             <div>
               <h1>{title}</h1>
               <p>
-                <strong>Founder & CEO at{' '}
-                  <a href="https://resend.com" target="blank">Resend</a>
+                <strong>CompSci Graduate Student @ {' '}
+                  <a href="https://engineering.asu.edu/" target="blank">Ira A. Fulton Schools of Engineering, ASU</a>
                 </strong><br />
                 {description}
               </p>

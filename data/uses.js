@@ -117,7 +117,7 @@ const categories = [
       {
         title: 'Alfred',
         description:
-          'My favorite Spotlight replacement with <a href="https://github.com/zenorocha/alfred-workflows" target="_blank">tons of workflows</a>.',
+          'My favorite Spotlight replacement with <a href="https://github.com/himudigonda/alfred-workflows" target="_blank">tons of workflows</a>.',
         url: 'https://alfredapp.com',
       },
       {

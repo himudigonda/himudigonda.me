@@ -144,11 +144,11 @@ function Honors(props) {
                 <meta content={`https://himudigonda.me${image}`} property="og:image" />
             </Head>
 
-            <h1>Scholarships</h1>
+            <h2>Scholarships</h2>
             {renderSC()}
-            <h1>Awards</h1>
+            <h2>Awards</h2>
             {renderAwd()}
-            <h1>Certifications</h1>
+            <h2>Certifications</h2>
             {renderCert()}
 
         </>

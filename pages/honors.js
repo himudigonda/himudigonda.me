@@ -9,7 +9,9 @@ import Pronunciation from '../components/Pronunciation'
 import Toast from '../components/Toast'
 import stripHtml from '../lib/strip-html'
 // import items from '../data/about'
-import items from '../data/honors'
+import sc_items from '../data/scholarships'
+import awd_items from '../data/awards'
+import cert_items from '../data/certifications'
 import Lottie from 'lottie-react'
 import copyBioIcon from '../public/static/icons/copy-bio.json'
 import downloadIcon from '../public/static/icons/download.json'
@@ -27,8 +29,61 @@ export async function getStaticProps() {
 }
 
 function Honors(props) {
-    const renderAll = () => {
-        return items.map((item, index) => {
+    const renderSC = () => {
+        return sc_items.map((item, index) => {
+            return (
+                <div style={{ marginBottom: 40 }} key={index}>
+                    <h3>{item.jobTitle}</h3>
+                    <p style={{ margin: 0 }}>
+                        <a href={item.companyUrl} target="_blank">
+                            {item.company}
+                        </a>
+                        <span> • {item.location}</span>
+                    </p>
+                    <p style={{ margin: 0 }}>
+                        <span>{format(parseISO(item.startDate), 'LLL yyyy')}</span>
+                        <span> – </span>
+                        <span>
+                            {item.endDate
+                                ? format(parseISO(item.endDate), 'LLL yyyy')
+                                : 'Present'}
+                        </span>
+                        {/* <span> • </span> */}
+                        {/* <span>{getDuration(item.startDate, item.endDate)}</span> */}
+                    </p>
+                </div>
+            )
+        })
+    }
+
+    const renderAwd = () => {
+        return awd_items.map((item, index) => {
+            return (
+                <div style={{ marginBottom: 40 }} key={index}>
+                    <h3>{item.jobTitle}</h3>
+                    <p style={{ margin: 0 }}>
+                        <a href={item.companyUrl} target="_blank">
+                            {item.company}
+                        </a>
+                        <span> • {item.location}</span>
+                    </p>
+                    <p style={{ margin: 0 }}>
+                        <span>{format(parseISO(item.startDate), 'LLL yyyy')}</span>
+                        <span> – </span>
+                        <span>
+                            {item.endDate
+                                ? format(parseISO(item.endDate), 'LLL yyyy')
+                                : 'Present'}
+                        </span>
+                        {/* <span> • </span> */}
+                        {/* <span>{getDuration(item.startDate, item.endDate)}</span> */}
+                    </p>
+                </div>
+            )
+        })
+    }
+    const renderCert = () => {
+        return cert_items.map((item, index) => {
             return (
                 <div style={{ marginBottom: 40 }} key={index}>
                     <h3>{item.jobTitle}</h3>
@@ -89,8 +144,13 @@ function Honors(props) {
                 <meta content={`https://himudigonda.me${image}`} property="og:image" />
             </Head>
 
-            <h2>Scholarships, Awards, and Certifications</h2>
-            {renderAll()}
+            <h1>Scholarships</h1>
+            {renderSC()}
+            <h1>Awards</h1>
+            {renderAwd()}
+            <h1>Certifications</h1>
+            {renderCert()}
+
         </>
     )
 }

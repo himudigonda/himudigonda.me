@@ -2,7 +2,7 @@
 title: "GroqRAG: Implementing advanced RAG models with Groq"
 description: ""
 slug: GroqRAG
-date: "2024-08-06"Aug 6, 2024
+date: "2024-08-06"
 ---
 
 

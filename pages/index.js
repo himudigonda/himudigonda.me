@@ -12,7 +12,6 @@ export async function getStaticProps() {
     props: {
       title: 'Himansh Mudigonda',
       description: 'Herbold ASU Graduate Scholarship 2024 | ASU Engineering Graduate Fellowship 2024',
-      image: '/static/images/home-bw.jpg',
     },
   }
 }

@@ -13,21 +13,8 @@ import items from '../data/honors'
 import Lottie from 'lottie-react'
 import copyBioIcon from '../public/static/icons/copy-bio.json'
 import downloadIcon from '../public/static/icons/download.json'
+
 export async function getStaticProps() {
-    // const allPosts = getAllPosts(['date', 'skip', 'slug', 'title'])
-
-    const featuredParams = [
-        'date',
-        'slug',
-        'title',
-        'image',
-        'content',
-        'description',
-    ]
-
-    const featuredPosts = [
-    ]
-
     return {
         props: {
             title: 'Articles // Himansh Mudigonda',
@@ -35,8 +22,6 @@ export async function getStaticProps() {
             image: '/static/images/articles-bw.jpg',
             primaryColor: 'yellow',
             secondaryColor: 'pink',
-            // featuredPosts,
-            // allPosts,
         },
     }
 }

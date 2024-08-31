@@ -13,6 +13,17 @@ import Lottie from 'lottie-react'
 import copyBioIcon from '../public/static/icons/copy-bio.json'
 import downloadIcon from '../public/static/icons/download.json'
 
+export async function getStaticProps() {
+    return {
+        props: {
+            title: 'Articles // Himansh Mudigonda',
+            tagline: 'Growth. Impact. Vision.',
+            image: '/static/images/articles-bw.jpg',
+            primaryColor: 'green',
+            secondaryColor: 'purple',
+        },
+    }
+}
 
 function Experience(props) {
     const renderAll = () => {

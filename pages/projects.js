@@ -12,8 +12,8 @@ export async function getStaticProps() {
     title: 'Projects // Himansh Mudigonda',
     tagline: 'Fun. Innovation. Collaboration.',
     image: '/static/images/projects-bw.jpg',
-    primaryColor: 'cyan',
-    secondaryColor: 'green',
+    primaryColor: 'red',
+    secondaryColor: 'orange',
   }
 
   return { props: meta }

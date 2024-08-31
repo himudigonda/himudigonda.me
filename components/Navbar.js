@@ -14,7 +14,7 @@ export default function Navbar() {
     'Projects',
     'Articles',
     'Honors',
-    'Contact',
+    // 'Contact',
     'Values'
   ]
   const [hovered, setHovered] = useState('')

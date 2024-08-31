@@ -132,7 +132,7 @@ function About(props) {
 
   const downloadHeadshot = () => {
     setToastTitle('Downloading...')
-    setToastDescription('You can now add this photo to your fancy site.')
+    setToastDescription('The headshot is being downloaded.')
     setShowToast(true)
   }
 
@@ -140,8 +140,8 @@ function About(props) {
     e.preventDefault()
     navigator.clipboard.writeText(description)
 
-    setToastTitle('Copied :D')
-    setToastDescription('You can now paste it anywhere.')
+    setToastTitle('Copied Bio to Clipboard 📋')
+    setToastDescription('You can now share or paste it anywhere.')
     setShowToast(true)
   }
 

@@ -59,6 +59,7 @@ const Container = styled('footer', {
   alignItems: 'center',
   justifyContent: 'center',
   padding: '20px 0',
+  color: '$secondary',
 })
 
 const Icon = styled('i', {

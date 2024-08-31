@@ -17,6 +17,7 @@ import experienceIcon from '../public/static/icons/experience.json'
 import honorsIcon from '../public/static/icons/honors.json'
 import copyLinkIcon from '../public/static/icons/copy-link.json'
 import emailIcon from '../public/static/icons/email.json'
+import charmIcon from '../public/static/icons/charm.json'
 import sourceIcon from '../public/static/icons/source.json'
 import aboutIcon from '../public/static/icons/about.json'
 import homeIcon from '../public/static/icons/home.json'
@@ -129,6 +130,24 @@ export default function CommandBar(props) {
       perform: () => router.push('/honors'),
       icon: <Lottie lottieRef={honorsRef} style={iconSize} animationData={honorsIcon} loop={false} autoplay={false} />,
     },
+    {
+      id: 'contact',
+      name: 'contact',
+      shortcut: ['g', 'h'],
+      keywords: 'go-contact',
+      section: 'Go To',
+      perform: () => router.push('/contact'),
+      icon: <Lottie lottieRef={honorsRef} style={iconSize} animationData={emailIcon} loop={false} autoplay={false} />,
+    },
+    {
+      id: 'Thanks to zenorocha.com for website design.',
+      name: 'Thanks to zenorocha.com for website design.',
+      shortcut: ['g', 'h'],
+      keywords: 'go-home',
+      section: 'Go To',
+      perform: () => router.push('/home'),
+      icon: <Lottie lottieRef={honorsRef} style={iconSize} animationData={charmIcon} loop={false} autoplay={false} />,
+    },
   ]
   return (
     <>
@@ -142,10 +161,12 @@ export default function CommandBar(props) {
           </Positioner>
         </KBarPortal>
         {props.children}
+
+
       </KBarProvider>
       <Toast
-        title="Copied :D"
-        description="You can now share it with anyone."
+        title="Copied Link to Clipboard 📋"
+        description="You can now share or paste it anywhere."
         isSuccess={true}
         showToast={showToast}
         setShowToast={setShowToast}

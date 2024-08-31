@@ -11,7 +11,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Himansh Mudigonda',
-      description: 'Herbold ASU Graduate Scholarship 2024 | ASU Engineering Graduate Fellowship 2024',
+      description: 'Machine Learning, Natural Langauge Processing, Computer Vision, GenerativeAI ',
     },
   }
 }

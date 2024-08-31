@@ -75,8 +75,7 @@ function About(props) {
     return (
       <div>
         <p>
-          This is made for journalists, podcast hosts, and event organizers to
-          copy-and-paste.
+          A more formal definition.
         </p>
         <blockquote>
           <p>{description}</p>

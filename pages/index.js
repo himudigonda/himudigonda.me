@@ -12,6 +12,7 @@ export async function getStaticProps() {
     props: {
       title: 'Himansh Mudigonda',
       description: 'Machine Learning, Natural Langauge Processing, Computer Vision, GenerativeAI ',
+      primaryColor: 'orange', secondaryColor: 'blue'
     },
   }
 }

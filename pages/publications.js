@@ -4,50 +4,24 @@ import Head from 'next/head'
 import { parseISO, format, intervalToDuration } from 'date-fns'
 import Base from '../layouts/Base'
 import stripHtml from '../lib/strip-html'
-import sc_items from '../data/scholarships'
-import awd_items from '../data/awards'
+import pub_items from '../data/publications'
 
 export async function getStaticProps() {
     return {
         props: {
             title: 'Articles // Himansh Mudigonda',
-            tagline: 'Respect. Power. Banana.',
+            tagline: 'Impact. Contribution. Results.',
             image: '/static/images/articles-bw.jpg',
-            primaryColor: 'red', secondaryColor: 'green'
+            primaryColor: 'pink',
+            secondaryColor: 'cyan',
         },
     }
 }
 
 function Honors(props) {
-    const renderSC = () => {
-        return sc_items.map((item, index) => {
-            return (
-                <div style={{ marginBottom: 40 }} key={index}>
-                    <h3>{item.jobTitle}</h3>
-                    <p style={{ margin: 0 }}>
-                        <a href={item.companyUrl} target="_blank">
-                            {item.company}
-                        </a>
-                        <span> • {item.location}</span>
-                    </p>
-                    <p style={{ margin: 0 }}>
-                        <span>{format(parseISO(item.startDate), 'LLL yyyy')}</span>
-                        <span> – </span>
-                        <span>
-                            {item.endDate
-                                ? format(parseISO(item.endDate), 'LLL yyyy')
-                                : 'Present'}
-                        </span>
-                        {/* <span> • </span> */}
-                        {/* <span>{getDuration(item.startDate, item.endDate)}</span> */}
-                    </p>
-                </div>
-            )
-        })
-    }
 
-    const renderAwd = () => {
-        return awd_items.map((item, index) => {
+    const renderCert = () => {
+        return pub_items.map((item, index) => {
             return (
                 <div style={{ marginBottom: 40 }} key={index}>
                     <h3>{item.jobTitle}</h3>
@@ -58,13 +32,13 @@ function Honors(props) {
                         <span> • {item.location}</span>
                     </p>
                     <p style={{ margin: 0 }}>
-                        <span>{format(parseISO(item.startDate), 'LLL yyyy')}</span>
-                        <span> – </span>
+                        <span>{format(parseISO(item.Date), 'LLL yyyy')}</span>
+                        {/* <span> – </span>
                         <span>
                             {item.endDate
                                 ? format(parseISO(item.endDate), 'LLL yyyy')
                                 : 'Present'}
-                        </span>
+                        </span> */}
                         {/* <span> • </span> */}
                         {/* <span>{getDuration(item.startDate, item.endDate)}</span> */}
                     </p>
@@ -95,7 +69,7 @@ function Honors(props) {
 
 
     const { title, image } = props
-    const description = `Here are a few of my honors, awards, scholarships and certifications</strong>.`
+    const description = `Here is a verbose list of all <strong>certifications</strong>.`
 
     return (
         <>
@@ -108,11 +82,8 @@ function Honors(props) {
                 <meta content={`https://himudigonda.me${image}`} property="og:image" />
             </Head>
 
-            <h2>Scholarships</h2>
-            {renderSC()}
-            <h2>Awards</h2>
-            {renderAwd()}
-
+            <h2>Publications</h2>
+            {renderCert()}
 
         </>
     )

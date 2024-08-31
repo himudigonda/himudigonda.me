@@ -1,19 +1,10 @@
 import { styled } from '../stitches.config'
 import React from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
 import { parseISO, format, intervalToDuration } from 'date-fns'
 import Base from '../layouts/Base'
-import { ButtonPrimary } from '../components/ButtonPrimary'
-import Pronunciation from '../components/Pronunciation'
-import Toast from '../components/Toast'
 import stripHtml from '../lib/strip-html'
-// import items from '../data/about'
-
 import cert_items from '../data/certifications'
-import Lottie from 'lottie-react'
-import copyBioIcon from '../public/static/icons/copy-bio.json'
-import downloadIcon from '../public/static/icons/download.json'
 
 export async function getStaticProps() {
     return {
@@ -21,8 +12,7 @@ export async function getStaticProps() {
             title: 'Articles // Himansh Mudigonda',
             tagline: 'Credibility. Practise. Knowledge.',
             image: '/static/images/articles-bw.jpg',
-            primaryColor: 'orange',
-            secondaryColor: 'green',
+            primaryColor: 'purple', secondaryColor: 'red'
         },
     }
 }

@@ -6,8 +6,8 @@ export default function ErrorMessage({ code }) {
   let description = "Something isn't right."
 
   if (code === 404) {
-    title = 'four oh four'
-    description = "This page doesn't exist."
+    title = "404...This page doesn't exist."
+    description = "But here's a joke: What's the object-oriented way to become wealthy? Inheritance."
   }
 
   return (

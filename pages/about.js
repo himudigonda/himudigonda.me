@@ -17,7 +17,7 @@ export async function getStaticProps() {
   const meta = {
     title: 'About // Zeno Rocha',
     description:
-      "Zeno Rocha is a Brazilian creator and programmer. He currently lives in San Francisco, California, where he's the Founder & CEO at Resend. His lifelong appreciation for building software and sharing knowledge led him to speak in over 110 conferences worldwide. His passion for open source put him on the top 20 most active users on GitHub at age 22. Before moving to the US, Zeno developed multiple applications, mentored startups, and worked at major companies in Latin America, such as Globo and Petrobras.",
+      "Himansh Mudigonda is a high-achieving graduate student in Computer Science, recognized for his academic excellence and passion for machine learning. He has demonstrated his ability to innovate through impactful projects, including the development of a groundbreaking non-invasive blood glucose detection model and achieving state-of-the-art results in chest X-ray disease prediction. He is a driven learner with a strong command of programming languages, machine learning frameworks, and cloud technologies, positioning him for continued success in the field.",
     tagline: 'Create. Share. Repeat.',
     image: '/static/images/about-bw.jpg',
     primaryColor: 'pink',
@@ -56,21 +56,12 @@ function About(props) {
               '@bp2': { marginTop: '-6px' },
             }}
           >
-            <strong>Hey, I'm Zeno Rocha</strong>
+            <strong>Hey, I'm Himansh Mudigonda</strong>
             <Pronunciation />
-            I started as a software engineer back in 2009, working with Flash.
+            I'm a CS graduate student @ASU specializing in Artificial Intelligence.
           </Paragraph>
           <Paragraph>
-            I'm the <strong>Founder & CEO</strong> at
-            Resend. Before that, I was a VP of Developer Experience at WorkOS and CPO at Liferay Cloud. I'm originally
-            from Brazil and now living in{' '}
-            <strong>San Francisco, California</strong> with my amazing wife and
-            beautiful daughter.
-          </Paragraph>
-          <Paragraph>
-            <strong>I love dark mode</strong>, open source, and side projects.
-            When I'm not working, I like running, watching movies, and{' '}
-            <strong>eating cheese</strong>.
+            Thrilled to be a recipient of the <strong>Herbold ASU Graduate Scholarship</strong> and the <strong>ASU Engineering Graduate Fellowship</strong>, I'm passionate about pushing the boundaries of <strong>machine learning</strong>. When I'm not coding or experimenting, you'll find me trying to find the perfect wallpaper,  fuelled by coffee,  strumming my guitar, solving Rubik's cubes, or <strong>hiking up 'A' Mountain</strong>.
           </Paragraph>
         </Section>
       </Container>

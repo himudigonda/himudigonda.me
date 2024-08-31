@@ -8,29 +8,28 @@ import { useKBar } from 'kbar'
 export default function Navbar() {
   const router = useRouter()
   const pages = [
+    'Home',
     'About',
-    'Articles',
+    'Experience',
     'Projects',
-    'Talks',
-    'Podcasts',
-    'Investing',
-    'Uses',
-    'Reminder',
+    'Articles',
+    'Honors',
   ]
   const [hovered, setHovered] = useState('')
   const { query } = useKBar()
+
 
   return (
     <AnimateSharedLayout>
       <Header>
         <Link href="/" passHref>
-          <ButtonLogo as="a">z</ButtonLogo>
+          <ButtonLogo as="a">H</ButtonLogo>
         </Link>
 
         <Nav>
           <List>
             {pages.map(page => {
-              const path = `/${page.toLowerCase()}`
+              const path = page === 'Home' ? '/' : `/${page.toLowerCase()}`
               const isHovered = hovered === page
 
               return (
@@ -43,9 +42,9 @@ export default function Navbar() {
                         css={
                           router.pathname == path
                             ? {
-                                color: '$primary',
-                                '&::after': { opacity: 1 },
-                              }
+                              color: '$primary',
+                              '&::after': { opacity: 1 },
+                            }
                             : ''
                         }
                       >
@@ -82,6 +81,7 @@ export default function Navbar() {
     </AnimateSharedLayout>
   )
 }
+
 
 const Header = styled('header', {
   display: 'flex',

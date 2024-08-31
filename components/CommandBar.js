@@ -13,6 +13,8 @@ import {
   KBarResults,
 } from 'kbar'
 import Lottie from 'lottie-react'
+import experienceIcon from '../public/static/icons/experience.json'
+import honorsIcon from '../public/static/icons/honors.json'
 import copyLinkIcon from '../public/static/icons/copy-link.json'
 import emailIcon from '../public/static/icons/email.json'
 import sourceIcon from '../public/static/icons/source.json'
@@ -34,21 +36,15 @@ export default function CommandBar(props) {
   const aboutRef = useRef()
   const articlesRef = useRef()
   const projectsRef = useRef()
-  const talksRef = useRef()
-  const podcastsRef = useRef()
-  const investingRef = useRef()
-  const usesRef = useRef()
-  const reminderRef = useRef()
+  const experienceRef = useRef()
+  const honorsRef = useRef()
   const router = useRouter()
   const [showToast, setShowToast] = useState(false)
-
   const copyLink = () => {
     navigator.clipboard.writeText(window.location.href)
     setShowToast(true)
   }
-
   const iconSize = { width: 24, height: 24 }
-
   const actions = [
     {
       id: 'copy',
@@ -115,52 +111,24 @@ export default function CommandBar(props) {
       icon: <Lottie lottieRef={projectsRef} style={iconSize} animationData={projectsIcon} loop={false} autoplay={false} />,
     },
     {
-      id: 'talks',
-      name: 'Talks',
-      shortcut: ['g', 't'],
-      keywords: 'go-talks',
+      id: 'experience',
+      name: 'Experience',
+      shortcut: ['g', 'e'],
+      keywords: 'go-experience',
       section: 'Go To',
-      perform: () => router.push('/talks'),
-      icon: <Lottie lottieRef={talksRef} style={iconSize} animationData={talksIcon} loop={false} autoplay={false} />,
+      perform: () => router.push('/experience'),
+      icon: <Lottie lottieRef={experienceRef} style={iconSize} animationData={experienceIcon} loop={false} autoplay={false} />,
     },
     {
-      id: 'podcasts',
-      name: 'Podcasts',
-      shortcut: ['g', 'c'],
-      keywords: 'go-podcasts',
+      id: 'honors',
+      name: 'Honors',
+      shortcut: ['g', 'h'],
+      keywords: 'go-honors',
       section: 'Go To',
-      perform: () => router.push('/podcasts'),
-      icon: <Lottie lottieRef={podcastsRef} style={iconSize} animationData={podcastsIcon} loop={false} autoplay={false} />,
-    },
-    {
-      id: 'investing',
-      name: 'Investing',
-      shortcut: ['g', 'i'],
-      keywords: 'go-investing',
-      section: 'Go To',
-      perform: () => router.push('/investing'),
-      icon: <Lottie lottieRef={investingRef} style={iconSize} animationData={investingIcon} loop={false} autoplay={false} />,
-    },
-    {
-      id: 'uses',
-      name: 'Uses',
-      shortcut: ['g', 'u'],
-      keywords: 'go-uses',
-      section: 'Go To',
-      perform: () => router.push('/uses'),
-      icon: <Lottie lottieRef={usesRef} style={iconSize} animationData={usesIcon} loop={false} autoplay={false} />,
-    },
-    {
-      id: 'reminder',
-      name: 'Reminder',
-      shortcut: ['g', 'r'],
-      keywords: 'go-reminder',
-      section: 'Go To',
-      perform: () => router.push('/reminder'),
-      icon: <Lottie lottieRef={reminderRef} style={iconSize} animationData={reminderIcon} loop={false} autoplay={false} />,
+      perform: () => router.push('/honors'),
+      icon: <Lottie lottieRef={honorsRef} style={iconSize} animationData={honorsIcon} loop={false} autoplay={false} />,
     },
   ]
-
   return (
     <>
       <KBarProvider actions={actions}>
@@ -172,10 +140,8 @@ export default function CommandBar(props) {
             </Animator>
           </Positioner>
         </KBarPortal>
-
         {props.children}
       </KBarProvider>
-
       <Toast
         title="Copied :D"
         description="You can now share it with anyone."

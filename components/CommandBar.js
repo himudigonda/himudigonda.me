@@ -14,6 +14,7 @@ import {
 } from 'kbar'
 import Lottie from 'lottie-react'
 import experienceIcon from '../public/static/icons/experience.json'
+import downloadIcon from '../public/static/icons/download.json'
 import honorsIcon from '../public/static/icons/honors.json'
 import copyLinkIcon from '../public/static/icons/copy-link.json'
 import emailIcon from '../public/static/icons/email.json'
@@ -38,6 +39,9 @@ export default function CommandBar(props) {
   const articlesRef = useRef()
   const projectsRef = useRef()
   const experienceRef = useRef()
+  const talksRef = useRef()
+  const charmRef = useRef()
+  const reminderRef = useRef()
   const honorsRef = useRef()
   const router = useRouter()
   const [showToast, setShowToast] = useState(false)
@@ -54,7 +58,16 @@ export default function CommandBar(props) {
       keywords: 'copy-link',
       section: 'General',
       perform: copyLink,
-      icon: <Lottie lottieRef={copyLinkRef} style={iconSize} animationData={copyLinkIcon} loop={false} autoplay={false} />,
+      icon: <Lottie lottieRef={copyLinkRef} style={iconSize} animationData={copyLinkIcon} loop={false} autoplay={true} />,
+    },
+    {
+      id: 'resume',
+      name: 'View Resume',
+      shortcut: ['r'],
+      keywords: 'View-resume',
+      section: 'General',
+      perform: () => router.push('https://docs.google.com/document/d/1CKc8khM8-MQzm2kvYjrlrGvkbN9oZyH9YCuXJPehxFE/edit?usp=sharing'),
+      icon: <Lottie lottieRef={copyLinkRef} style={iconSize} animationData={downloadIcon} loop={false} autoplay={true} />,
     },
     {
       id: 'email',
@@ -63,7 +76,7 @@ export default function CommandBar(props) {
       keywords: 'email',
       section: 'General',
       perform: () => router.push('/contact'),
-      icon: <Lottie lottieRef={emailRef} style={iconSize} animationData={emailIcon} loop={false} autoplay={false} />,
+      icon: <Lottie lottieRef={emailRef} style={iconSize} animationData={emailIcon} loop={false} autoplay={true} />,
     },
     {
       id: 'source',
@@ -73,7 +86,7 @@ export default function CommandBar(props) {
       section: 'General',
       perform: () =>
         window.open('https://github.com/himudigonda/himudigonda.me', '_blank'),
-      icon: <Lottie lottieRef={sourceRef} style={iconSize} animationData={sourceIcon} loop={false} autoplay={false} />,
+      icon: <Lottie lottieRef={sourceRef} style={iconSize} animationData={sourceIcon} loop={false} autoplay={true} />,
     },
     {
       id: 'home',
@@ -82,7 +95,7 @@ export default function CommandBar(props) {
       keywords: 'home',
       section: 'Go To',
       perform: () => router.push('/'),
-      icon: <Lottie lottieRef={homeRef} style={iconSize} animationData={homeIcon} loop={false} autoplay={false} />,
+      icon: <Lottie lottieRef={homeRef} style={iconSize} animationData={homeIcon} loop={false} autoplay={true} />,
     },
     {
       id: 'about',
@@ -91,7 +104,7 @@ export default function CommandBar(props) {
       keywords: 'about',
       section: 'Go To',
       perform: () => router.push('/about'),
-      icon: <Lottie lottieRef={aboutRef} style={iconSize} animationData={aboutIcon} loop={false} autoplay={false} />,
+      icon: <Lottie lottieRef={aboutRef} style={iconSize} animationData={aboutIcon} loop={false} autoplay={true} />,
     },
     {
       id: 'experience',
@@ -100,7 +113,7 @@ export default function CommandBar(props) {
       keywords: 'experience',
       section: 'Go To',
       perform: () => router.push('/experience'),
-      icon: <Lottie lottieRef={experienceRef} style={iconSize} animationData={experienceIcon} loop={false} autoplay={false} />,
+      icon: <Lottie lottieRef={experienceRef} style={iconSize} animationData={experienceIcon} loop={false} autoplay={true} />,
     },
     {
       id: 'projects',
@@ -109,7 +122,7 @@ export default function CommandBar(props) {
       keywords: 'projects',
       section: 'Go To',
       perform: () => router.push('/projects'),
-      icon: <Lottie lottieRef={projectsRef} style={iconSize} animationData={projectsIcon} loop={false} autoplay={false} />,
+      icon: <Lottie lottieRef={projectsRef} style={iconSize} animationData={projectsIcon} loop={false} autoplay={true} />,
     },
 
     {
@@ -119,7 +132,7 @@ export default function CommandBar(props) {
       keywords: 'articles',
       section: 'Go To',
       perform: () => router.push('/articles'),
-      icon: <Lottie lottieRef={articlesRef} style={iconSize} animationData={articlesIcon} loop={false} autoplay={false} />,
+      icon: <Lottie lottieRef={articlesRef} style={iconSize} animationData={articlesIcon} loop={false} autoplay={true} />,
     },
     {
       id: 'honors',
@@ -128,7 +141,7 @@ export default function CommandBar(props) {
       keywords: 'honors',
       section: 'Go To',
       perform: () => router.push('/honors'),
-      icon: <Lottie lottieRef={honorsRef} style={iconSize} animationData={honorsIcon} loop={false} autoplay={false} />,
+      icon: <Lottie lottieRef={honorsRef} style={iconSize} animationData={honorsIcon} loop={false} autoplay={true} />,
     },
     {
       id: 'certifications',
@@ -137,7 +150,7 @@ export default function CommandBar(props) {
       keywords: 'certifications',
       section: 'Go To',
       perform: () => router.push('/certifications'),
-      icon: <Lottie lottieRef={honorsRef} style={iconSize} animationData={talksIcon} loop={false} autoplay={false} />,
+      icon: <Lottie lottieRef={talksRef} style={iconSize} animationData={talksIcon} loop={false} autoplay={true} />,
     },
     {
       id: 'publications',
@@ -146,7 +159,7 @@ export default function CommandBar(props) {
       keywords: 'publications',
       section: 'Go To',
       perform: () => router.push('/publications'),
-      icon: <Lottie lottieRef={honorsRef} style={iconSize} animationData={reminderIcon} loop={false} autoplay={false} />,
+      icon: <Lottie lottieRef={reminderRef} style={iconSize} animationData={reminderIcon} loop={false} autoplay={true} />,
     },
     {
       id: 'Thanks to zenorocha.com for website design.',
@@ -155,7 +168,7 @@ export default function CommandBar(props) {
       keywords: 'home',
       section: 'Go To',
       perform: () => router.push('/'),
-      icon: <Lottie lottieRef={honorsRef} style={iconSize} animationData={charmIcon} loop={false} autoplay={false} />,
+      icon: <Lottie lottieRef={charmRef} style={iconSize} animationData={charmIcon} loop={false} autoplay={true} />,
     },
   ]
   return (

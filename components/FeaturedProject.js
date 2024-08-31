@@ -22,7 +22,7 @@ export default function FeaturedProject(props) {
           style={{ width: 24, height: 24, marginBottom: 10 }}
           animationData={icon}
           loop={false}
-          autoplay={false}
+          autoplay={true}
         />
         <Body>
           <Title>{project.title}</Title>

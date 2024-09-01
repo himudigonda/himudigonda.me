@@ -13,7 +13,7 @@ export async function getStaticProps() {
             title: 'Honors// Himansh Mudigonda',
             tagline: 'Respect. Power. Banana.',
             image: '/static/images/articles-bw.jpg',
-            primaryColor: 'red', secondaryColor: 'green'
+            primaryColor: 'white', secondaryColor: 'blue'
         },
     }
 }

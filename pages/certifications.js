@@ -12,7 +12,7 @@ export async function getStaticProps() {
             title: 'Certifications // Himansh Mudigonda',
             tagline: 'Credibility. Practise. Knowledge.',
             image: '/static/images/articles-bw.jpg',
-            primaryColor: 'purple', secondaryColor: 'red'
+            primaryColor: 'white', secondaryColor: 'orange'
         },
     }
 }
@@ -68,15 +68,12 @@ function Honors(props) {
 
 
     const { title, image } = props
-    const description = `Here is a verbose list of all <strong>certifications</strong>.`
 
     return (
         <>
             <Head>
                 <title>{title}</title>
                 <meta content={title} property="og:title" />
-                <meta content={stripHtml(description)} name="description" />
-                <meta content={stripHtml(description)} property="og:description" />
                 <meta content="https://himudigonda.me/certifications" property="og:url" />
             </Head>
 

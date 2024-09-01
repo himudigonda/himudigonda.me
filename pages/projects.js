@@ -11,7 +11,7 @@ export async function getStaticProps() {
   const meta = {
     title: 'Projects // Himansh Mudigonda',
     tagline: 'Fun. Innovation. Collaboration.',
-    primaryColor: 'purple', secondaryColor: 'yellow'
+    primaryColor: 'white', secondaryColor: 'red'
   }
 
   return { props: meta }

@@ -12,7 +12,7 @@ export async function getStaticProps() {
             title: 'Publications // Himansh Mudigonda',
             tagline: 'Impact. Contribution. Results.',
             image: '/static/images/articles-bw.jpg',
-            primaryColor: 'pink',
+            primaryColor: 'white',
             secondaryColor: 'cyan',
         },
     }

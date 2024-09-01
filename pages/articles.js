@@ -28,7 +28,7 @@ export async function getStaticProps() {
     props: {
       title: 'Articles // Himansh Mudigonda',
       tagline: 'Code. Test. Write.',
-      primaryColor: 'cyan', secondaryColor: 'orange',
+      primaryColor: 'white', secondaryColor: 'green',
       featuredPosts,
       allPosts,
     },

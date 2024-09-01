@@ -11,7 +11,7 @@ export async function getStaticProps() {
         props: {
             title: 'Experience // Himansh Mudigonda',
             tagline: 'Growth. Impact. Vision.',
-            primaryColor: 'pink', secondaryColor: 'purple',
+            primaryColor: 'white', secondaryColor: 'purple',
         },
     }
 }

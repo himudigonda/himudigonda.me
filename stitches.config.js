@@ -12,7 +12,8 @@ export const {
 } = createStitches({
   theme: {
     colors: {
-      yellow: '#ffff80',
+      white: "#ffffff",
+      yellow: '#ffce44',
       pink: '#ff80bf',
       purple: '#9580ff',
       red: '#ff9580',
@@ -23,6 +24,7 @@ export const {
       secondary: '#8f9ba8',
       background: '#08070b',
       hover: '#212024',
+      blue: '#80a1ff',
       command: 'rgba(255, 255, 255, 0.05)',
     },
     fonts: {

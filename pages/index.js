@@ -12,13 +12,20 @@ export async function getStaticProps() {
     props: {
       title: 'Himansh Mudigonda',
       description: 'Machine Learning, Natural Langauge Processing, Computer Vision, GenerativeAI ',
-      primaryColor: 'orange', secondaryColor: 'blue'
+      primaryColor: "#ffffff", secondaryColor: 'orange',
     },
   }
 }
 
+const GradientTitle = styled('h1', {
+  backgroundSize: '100%',
+  backgroundClip: 'text',
+  color: 'transparent',
+  display: 'inline-block',
+})
+
 export default function Index(props) {
-  const { title, description, image } = props
+  const { title, description, primaryColor, secondaryColor } = props
 
   return (
     <Wrapper>
@@ -42,7 +49,17 @@ export default function Index(props) {
         <PostContent>
           <PostContainer>
             <div>
-              <h1>{title}</h1>
+              <GradientTitle
+                css={{
+                  backgroundImage: `linear-gradient(
+                    135deg,
+                    ${primaryColor} 0%,
+                    ${secondaryColor} 100%
+                  );`,
+                }}
+              >
+                {title}
+              </GradientTitle>
               <p>
                 <strong>CompSci Graduate Student @ {' '}
                   <a href="https://engineering.asu.edu/" target="blank">Ira A. Fulton Schools of Engineering, ASU</a>

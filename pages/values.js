@@ -9,7 +9,7 @@ export async function getStaticProps() {
     description:
       'Values are the guiding principles that shape our lives. They are the compass that directs our behavior and actions. They influence our decisions, our relationships, and our sense of purpose. They are the foundation of our character and the essence of who we are. In this section, I share the values that define me and guide me in my journey.',
     tagline: 'The Foundation Stone',
-    primaryColor: 'cyan',
+    primaryColor: 'white',
     secondaryColor: 'purple',
   }
 

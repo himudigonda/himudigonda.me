@@ -19,7 +19,7 @@ export async function getStaticProps() {
 
 function Projects(props) {
   const renderFeatured = () => {
-    const featured = ['Llama-Bots', 'Parallel Computing Tutorials', 'OpenForensics-DeepFake']
+    const featured = ['Llama-Bots', 'arxiv.org_crawler', 'OpenForensics-DeepFake']
 
     return items
       .map(item => {

@@ -4,6 +4,7 @@ import 'remixicon/fonts/remixicon.css'
 import Router from 'next/router'
 import * as gtag from '../lib/gtag'
 import CommandBar from '../components/CommandBar'
+import { Analytics } from '@vercel/analytics/react'
 
 Router.events.on('routeChangeComplete', url => gtag.pageview(url))
 

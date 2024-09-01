@@ -58,7 +58,6 @@ function Contact(props) {
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
         <meta content="https://himudigonda.me/contact" property="og:url" />
-        <meta content={`https://himudigonda.me${image}`} property="og:image" />
       </Head>
 
       <Box>

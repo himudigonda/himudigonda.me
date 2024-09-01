@@ -25,7 +25,6 @@ function Post(props) {
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />
         <meta content={url} property="og:url" />
-        <meta content={image} property="og:image" />
 
         {props.canonical_url && (
           <link rel="canonical" href={props.canonical_url} />

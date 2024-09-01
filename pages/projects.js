@@ -11,7 +11,6 @@ export async function getStaticProps() {
   const meta = {
     title: 'Projects // Himansh Mudigonda',
     tagline: 'Fun. Innovation. Collaboration.',
-    image: '/static/images/projects-bw.jpg',
     primaryColor: 'purple', secondaryColor: 'yellow'
   }
 
@@ -73,7 +72,6 @@ function Projects(props) {
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
         <meta content="https://himudigonda.me/projects" property="og:url" />
-        <meta content={`https://himudigonda.me${image}`} property="og:image" />
       </Head>
 
       <AnimateSharedLayout>

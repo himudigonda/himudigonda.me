@@ -26,8 +26,7 @@ function Reminder(props) {
         <meta content={title} property="og:title" />
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />
-        <meta content="https://himudigonda.me/reminder" property="og:url" />
-        <meta content={`https://himudigonda.me${image}`} property="og:image" />
+        <meta content="https://himudigonda.me/values" property="og:url" />
       </Head>
       <Box css={{ textAlign: 'justify' }}>
         <p>

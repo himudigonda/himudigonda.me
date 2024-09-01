@@ -104,8 +104,7 @@ function Honors(props) {
                 <meta content={title} property="og:title" />
                 <meta content={stripHtml(description)} name="description" />
                 <meta content={stripHtml(description)} property="og:description" />
-                <meta content="https://himudigonda.me/articles" property="og:url" />
-                <meta content={`https://himudigonda.me${image}`} property="og:image" />
+                <meta content="https://himudigonda.me/honors" property="og:url" />
             </Head>
 
             <h2>Scholarships</h2>

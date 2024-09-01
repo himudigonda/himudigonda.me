@@ -80,7 +80,6 @@ function Articles(props) {
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
         <meta content="https://himudigonda.me/articles" property="og:url" />
-        <meta content={`https://himudigonda.me${image}`} property="og:image" />
       </Head>
 
       <AnimateSharedLayout>

@@ -10,8 +10,6 @@
     "deploy": "vercel --prod"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.0.0",
-    "@vercel/speed-insights": "^1.0.0",
     "@radix-ui/react-toast": "^1.0.0",
     "@react-email/html": "^0.0.1",
     "@stitches/react": "^1.2.6",

@@ -4,8 +4,8 @@ import 'remixicon/fonts/remixicon.css'
 import Router from 'next/router'
 import * as gtag from '../lib/gtag'
 import CommandBar from '../components/CommandBar'
-import { Analytics } from '@vercel/analytics/react'
-import { SpeedInsights } from "@vercel/speed-insights/next";
+// import { Analytics } from '@vercel/analytics/react'
+// import { SpeedInsights } from "@vercel/speed-insights/next";
 
 Router.events.on('routeChangeComplete', url => gtag.pageview(url))
 
@@ -18,8 +18,8 @@ export default function MyApp({ Component, pageProps }) {
     <CommandBar>
       <Layout>
         <Component {...pageProps} />
-        <SpeedInsights />
-        <Analytics />
+        {/* <SpeedInsights />
+        <Analytics /> */}
       </Layout>
     </CommandBar>
   )

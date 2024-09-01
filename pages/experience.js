@@ -16,7 +16,7 @@ import downloadIcon from '../public/static/icons/download.json'
 export async function getStaticProps() {
     return {
         props: {
-            title: 'Articles // Himansh Mudigonda',
+            title: 'Experience // Himansh Mudigonda',
             tagline: 'Growth. Impact. Vision.',
             primaryColor: 'pink', secondaryColor: 'purple',
         },

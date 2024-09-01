@@ -9,7 +9,7 @@ import cert_items from '../data/certifications'
 export async function getStaticProps() {
     return {
         props: {
-            title: 'Articles // Himansh Mudigonda',
+            title: 'Certifications // Himansh Mudigonda',
             tagline: 'Credibility. Practise. Knowledge.',
             image: '/static/images/articles-bw.jpg',
             primaryColor: 'purple', secondaryColor: 'red'

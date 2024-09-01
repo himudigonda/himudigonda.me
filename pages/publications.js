@@ -9,7 +9,7 @@ import pub_items from '../data/publications'
 export async function getStaticProps() {
     return {
         props: {
-            title: 'Articles // Himansh Mudigonda',
+            title: 'Publications // Himansh Mudigonda',
             tagline: 'Impact. Contribution. Results.',
             image: '/static/images/articles-bw.jpg',
             primaryColor: 'pink',

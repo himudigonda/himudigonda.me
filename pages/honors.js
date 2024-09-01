@@ -10,7 +10,7 @@ import awd_items from '../data/awards'
 export async function getStaticProps() {
     return {
         props: {
-            title: 'Articles // Himansh Mudigonda',
+            title: 'Honors// Himansh Mudigonda',
             tagline: 'Respect. Power. Banana.',
             image: '/static/images/articles-bw.jpg',
             primaryColor: 'red', secondaryColor: 'green'

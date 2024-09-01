@@ -10,7 +10,7 @@ export default function FeaturedArticle(props) {
     <Article href={props.href}>
       <Animation index={props.index}>
         <Container>
-          <ImageContainer css={{ backgroundImage: `url(${props.image})` }} />
+          {/* <ImageContainer css={{ backgroundImage: `url(${props.image})` }} /> */}
           <Content>
             <Title>{props.title}</Title>
             <Description>{props.description}</Description>

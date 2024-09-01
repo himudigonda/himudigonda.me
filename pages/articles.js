@@ -45,7 +45,7 @@ function Articles(props) {
           href={`/${post.slug}/`}
           title={post.title}
           description={post.description}
-          image={post.image}
+          // image={post.image}
           stats={post.stats}
           content={post.content}
         />

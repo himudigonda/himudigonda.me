@@ -1,16 +1,29 @@
 import { styled } from '../stitches.config'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import readingTime from 'reading-time'
+import Lottie from 'lottie-react'
 
 export default function FeaturedArticle(props) {
   const stats = readingTime(props.content)
+  const icon = require(`../public/static/icons/resend.json`)
+  const iconRef = useRef()
 
   return (
-    <Article href={props.href}>
+    <Article
+      href={props.href}
+      onMouseEnter={() => iconRef.current?.play()}
+      onMouseLeave={() => iconRef.current?.stop()}
+    >
       <Animation index={props.index}>
         <Container>
-          {/* <ImageContainer css={{ backgroundImage: `url(${props.image})` }} /> */}
+          <Lottie
+            lottieRef={iconRef}
+            style={{ width: 24, height: 24, marginBottom: 10 }}
+            animationData={icon}
+            loop={false}
+            autoplay={true}
+          />
           <Content>
             <Title>{props.title}</Title>
             <Description>{props.description}</Description>

@@ -11,7 +11,8 @@ export async function getStaticProps() {
   const meta = {
     title: 'Projects // Himansh Mudigonda',
     tagline: 'Fun. Innovation. Collaboration.',
-    primaryColor: 'white', secondaryColor: 'red'
+    primaryColor: 'white',
+    secondaryColor: 'red',
   }
 
   return { props: meta }
@@ -19,7 +20,12 @@ export async function getStaticProps() {
 
 function Projects(props) {
   const renderFeatured = () => {
-    const featured = ['Llama-Bots', 'arxiv.org_crawler', 'OpenForensics-DeepFake']
+    const featured = [
+      'Fake-or-Real (FoR) Speech',
+      'Llama-Bots',
+      'arxiv.org_crawler',
+      'OpenForensics-DeepFake',
+    ]
 
     return items
       .map(item => {

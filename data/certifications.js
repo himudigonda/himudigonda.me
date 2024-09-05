@@ -29,6 +29,27 @@ const cert_items = [
     location: 'Coursera',
   },
   {
+    jobTitle: 'Artificial Intelligence Foundations: Machine Learning (2018)',
+    company: 'LinkedIn Learning',
+    startDate: '2024-08-01',
+    // endDate: '2024-08-01',
+    location: 'LinkedIn',
+  },
+  {
+    jobTitle: 'Machine Learning Foundations: Linear Algebra',
+    company: 'LinkedIn Learning',
+    startDate: '2024-08-01',
+    // endDate: '2024-08-01',
+    location: 'LinkedIn',
+  },
+  {
+    jobTitle: 'Machine Learning Foundations: Statistics',
+    company: 'LinkedIn Learning',
+    startDate: '2024-08-01',
+    // endDate: '2024-08-01',
+    location: 'LinkedIn',
+  },
+  {
     jobTitle: 'Supervised Machine Learning: Regression and Classification ',
     company: 'Stanford University',
     startDate: '2024-08-01',

@@ -103,7 +103,7 @@ function Honors(props) {
         <meta content="https://himudigonda.me/honors" property="og:url" />
       </Head>
 
-      <h2>Scholarships</h2>
+      <h2>Scholarships and Fellowships</h2>
       {renderSC()}
       <h2>Awards</h2>
       {renderAwd()}

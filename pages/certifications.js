@@ -77,8 +77,6 @@ function Honors(props) {
           property="og:url"
         />
       </Head>
-
-      <h2>Certifications</h2>
       {renderCert()}
     </>
   )

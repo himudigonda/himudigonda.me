@@ -1,5 +1,12 @@
 const cert_items = [
   {
+    jobTitle: 'Structuring Machine Learning Projects',
+    company: 'DeepLearning.AI',
+    startDate: '2024-09-01',
+    // endDate: '2024-08-01',
+    location: 'Coursera',
+  },
+  {
     jobTitle: 'Google AI Essentials',
     company: 'Google',
     startDate: '2024-08-01',

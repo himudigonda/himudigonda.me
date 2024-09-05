@@ -11,8 +11,10 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Himansh Mudigonda',
-      description: 'Machine Learning, Natural Langauge Processing, Computer Vision, GenerativeAI ',
-      primaryColor: "#ffffff", secondaryColor: 'orange',
+      description:
+        'Machine Learning, Natural Langauge Processing, Computer Vision, GenerativeAI ',
+      primaryColor: '#ffffff',
+      secondaryColor: 'orange',
     },
   }
 }
@@ -38,7 +40,7 @@ export default function Index(props) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(getPersonJsonLd())
+            __html: JSON.stringify(getPersonJsonLd()),
           }}
           key="person-jsonld"
         />
@@ -61,9 +63,14 @@ export default function Index(props) {
                 {title}
               </GradientTitle>
               <p>
-                <strong>CompSci Graduate Student @ {' '}
-                  <a href="https://engineering.asu.edu/" target="blank">Ira A. Fulton Schools of Engineering, ASU</a>
-                </strong><br />
+                <strong>
+                  CompSci Graduate Student @{' '}
+                  <a href="https://engineering.asu.edu/" target="blank">
+                    Ira A. Fulton Schools of Engineering, Arizona State
+                    University
+                  </a>
+                </strong>
+                <br />
                 {description}
               </p>
               <ShortcutHome />

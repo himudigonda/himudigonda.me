@@ -1,6 +1,6 @@
 ---
 title: "GroqRAG: Implementing advanced RAG models with Groq"
-description: ""
+description: "This guide details the implementation of an advanced and robust RAG pipeline using the Groq API in Python. The pipeline includes multi-step document retrieval, verification, response generation, and a state-of-the-art ranking algorithm to identify the most relevant documents. It is designed to handle multiple documents stored in a data/ folder and maintain conversational context across messages."
 slug: GroqRAG
 date: "2024-08-06"
 ---
@@ -114,16 +114,16 @@ Implement the main RAG function that orchestrates the extraction, retrieval, ver
         # Step 1: Load and extract texts from PDFs
         texts = load_and_extract_texts_from_pdfs(data_folder)
         print(f"Loaded and Extracted Texts from {len(texts)} PDFs")
-    
+
         # Step 2: Retrieve relevant chunks
         relevant_texts = retrieve_relevant_chunks(texts, query)
         print(f"Relevant Texts: {[text['file_path'] for text in relevant_texts]}")
-    
+
         # Step 3: Split relevant texts into chunks
         chunks = []
         for text in relevant_texts:
             chunks.extend(split_text_into_chunks(text["text"]))
-    
+
         # Step 4: Generate response
         response = generate_response(chunks, query, context_history)
         return response
@@ -134,16 +134,16 @@ Implement an interactive CLI to allow users to input queries and receive respons
     def interactive_cli(data_folder="data/"):
         context_history = deque()
         print("Welcome to the RAG-powered conversational assistant! Type /bye to exit.")
-    
+
         while True:
             user_input = input(">> user: ")
             if user_input.lower() == "/bye":
                 print("Goodbye!")
                 break
-    
+
             response = rag_pipeline(data_folder, user_input, context_history)
             context_history = maintain_conversational_context(response, context_history)
-    
+
             print(f">> groq: {response}")
 
 **Run the Interactive CLI:
@@ -192,18 +192,18 @@ Implement an interactive CLI to allow users to input queries and receive respons
     def interactive_cli(data_folder="data/"):
         context_history = deque()
         print("Welcome to the RAG-powered conversational assistant! Type /bye to exit.")
-    
+
         while True:
             user_input = input(">> user: ")
             if user_input.lower() == "/bye":
                 print("Goodbye!")
                 break
-    
+
             response = rag_pipeline(data_folder, user_input, context_history)
             context_history = maintain_conversational_context(response, context_history)
-    
+
             print(f">> groq: {response}")
-    
+
             # Get feedback from the user
             rating = get_user_feedback()
             print(f">> user: Rated the response as {rating}/5")
@@ -213,12 +213,12 @@ Implement an interactive CLI to allow users to input queries and receive respons
 ### Generating Visual Summaries:
 
     import matplotlib.pyplot as plt
-    
+
     def generate_visual_summary(texts):
         # Example: Generate a bar chart showing the length of each document
         lengths = [len(text["text"]) for text in texts]
         file_names = [os.path.basename(text["file_path"]) for text in texts]
-    
+
         plt.figure(figsize=(10, 5))
         plt.bar(file_names, lengths, color='blue')
         plt.xlabel('Document')
@@ -233,22 +233,22 @@ Implement an interactive CLI to allow users to input queries and receive respons
     def interactive_cli(data_folder="data/"):
         context_history = deque()
         print("Welcome to the RAG-powered conversational assistant! Type /bye to exit.")
-    
+
         while True:
             user_input = input(">> user: ")
             if user_input.lower() == "/bye":
                 print("Goodbye!")
                 break
-    
+
             response = rag_pipeline(data_folder, user_input, context_history)
             context_history = maintain_conversational_context(response, context_history)
-    
+
             print(f">> groq: {response}")
-    
+
             # Get feedback from the user
             rating = get_user_feedback()
             print(f">> user: Rated the response as {rating}/5")
-    
+
             # Generate and display a visual summary
             texts = load_and_extract_texts_from_pdfs(data_folder)
             generate_visual_summary(texts)

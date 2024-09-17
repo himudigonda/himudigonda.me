@@ -23,13 +23,13 @@ export default function ShortcutHome() {
     } else if (isMac) {
       return (
         <ButtonPrimary as="button" onClick={query.toggle}>
-          Press <kbd>⌘</kbd> <kbd>K</kbd> to start →
+          Click me or press <kbd>⌘</kbd> <kbd>K</kbd> to start →
         </ButtonPrimary>
       )
     } else {
       return (
         <ButtonPrimary as="button" onClick={query.toggle}>
-          Press <kbd>ctrl</kbd> <kbd>K</kbd> to start →
+          Click me or press <kbd>ctrl</kbd> <kbd>K</kbd> to start →
         </ButtonPrimary>
       )
     }

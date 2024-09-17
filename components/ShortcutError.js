@@ -21,7 +21,7 @@ export default function ShortcutError() {
 
     return (
       <ButtonPrimary as="a" href="/">
-        Press <kbd>G</kbd> <kbd>H</kbd> to go home →
+        Click me or press <kbd>G</kbd> <kbd>H</kbd> to go home →
       </ButtonPrimary>
     )
   }

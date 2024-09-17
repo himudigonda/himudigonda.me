@@ -3,6 +3,16 @@ const items = [
     year: '2024',
     projects: [
       {
+        title: 'x-of-Thought',
+        description:
+          'A project for advanced reasoning visualization using Chain of Thought (CoT) and Graph of Thought (GoT) prompts, with sentiment analysis and dynamic graph updates.',
+        url: 'https://github.com/himudigonda/x-of-Thought',
+        active: true,
+        icon: 'resend',
+        stats:
+          'Python, Streamlit, NetworkX, LangChain, PyTorch, Pytorch Audio, OpenCV, Pandas, Scikit-Learn',
+      },
+      {
         title: 'Fake-or-Real (FoR) Speech',
         description:
           'Benchmarked with various deep learning models to detect synthesised speech.',

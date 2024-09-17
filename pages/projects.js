@@ -21,10 +21,10 @@ export async function getStaticProps() {
 function Projects(props) {
   const renderFeatured = () => {
     const featured = [
+      'x-of-Thought',
       'Fake-or-Real (FoR) Speech',
-      'Llama-Bots',
-      'arxiv.org_crawler',
       'OpenForensics-DeepFake',
+      'Llama-Bots',
     ]
 
     return items

@@ -20,15 +20,14 @@ export async function getStaticProps() {
     'description',
   ]
 
-  const featuredPosts = [
-    getPostBySlug('GroqRAG', featuredParams),
-  ]
+  const featuredPosts = [getPostBySlug('GroqRAG', 'CUDA-DDP', featuredParams)]
 
   return {
     props: {
       title: 'Articles // Himansh Mudigonda',
       tagline: 'Code. Test. Write.',
-      primaryColor: 'white', secondaryColor: 'green',
+      primaryColor: 'white',
+      secondaryColor: 'green',
       featuredPosts,
       allPosts,
     },

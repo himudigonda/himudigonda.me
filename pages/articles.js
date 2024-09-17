@@ -12,15 +12,18 @@ export async function getStaticProps() {
   const allPosts = getAllPosts(['date', 'skip', 'slug', 'title'])
 
   const featuredParams = [
-    'date',
-    'slug',
     'title',
+    'description',
+    'slug',
+    'date',
     'image',
     'content',
-    'description',
   ]
 
-  const featuredPosts = [getPostBySlug('GroqRAG', 'CUDA-DDP', featuredParams)]
+  const featuredPosts = [
+    getPostBySlug('GroqRAG', featuredParams),
+    getPostBySlug('CUDA-DDP', featuredParams),
+  ]
 
   return {
     props: {

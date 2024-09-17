@@ -4,7 +4,10 @@ let jwt
 
 try {
   const scopes = 'https://www.googleapis.com/auth/analytics.readonly'
-  const auth = require('../../../auth.json')
+  const auth = {
+    client_email: process.env.GOOGLE_CLIENT_EMAIL,
+    private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+  }
   jwt = new google.auth.JWT(auth.client_email, null, auth.private_key, scopes)
 } catch (e) {
   console.error(

@@ -2,7 +2,7 @@
 title: "Unraveling CUDA DDP: How Distributed GPUs Collaborate to Accelerate Deep Learning"
 description: "CUDA Distributed Data Parallel (DDP) distributes computations across multiple GPUs and machines to accelerate deep learning. This article explores the mathematical principles behind gradient synchronization and its impact on model updates, including how batch size and learning rates affect training in distributed setups."
 slug: CUDA-DDP
-date: "2024-08-14"
+date: "2024-09-17"
 ---
 
 ## **Unraveling CUDA DDP: How Distributed GPUs Collaborate to Accelerate Deep Learning**

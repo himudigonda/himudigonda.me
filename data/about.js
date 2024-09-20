@@ -28,7 +28,7 @@ const items = [
     location: 'Arizona State University, Tempe, USA',
   },
   {
-    jobTitle: 'Machine Learning, Software Development',
+    jobTitle: 'Machine Learning Researcher',
     company: 'SRM Advanced Electronics Laboratory',
     startDate: '2022-10-01',
     endDate: '2023-07-31',

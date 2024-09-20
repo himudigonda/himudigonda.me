@@ -65,13 +65,6 @@ export async function getStaticProps({ params }) {
     const isProd = process.env.NODE_ENV === 'production'
     const base = isProd ? 'https://himudigonda.me' : 'http://localhost:3000'
 
-    if (isProd) {
-      const viewsReq = await fetch(`${base}/api/views/${params.slug}`)
-      const viewsRes = await viewsReq.json()
-
-      post.views = new Intl.NumberFormat().format(viewsRes.views || 0)
-    }
-
     return {
       props: {
         ...post,

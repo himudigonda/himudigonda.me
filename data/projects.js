@@ -3,6 +3,16 @@ const items = [
     year: '2024',
     projects: [
       {
+        title: 'TriPendulum Dynamics',
+        description:
+          'A simulation application for visualizing the dynamics of a three-point pendulum system, featuring real-time plot updates and parameter control.',
+        url: 'https://github.com/himudigonda/TriPendulum-Dynamics',
+        active: true,
+        icon: 'resend',
+        stats:
+          'Python, PyQt5, NumPy, SciPy, pyqtgraph, PySide6, Matplotlib, Random',
+      },
+      {
         title: 'x-of-Thought',
         description:
           'A project for advanced reasoning visualization using Chain of Thought (CoT) and Graph of Thought (GoT) prompts, with sentiment analysis and dynamic graph updates.',

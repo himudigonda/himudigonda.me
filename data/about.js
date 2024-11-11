@@ -3,7 +3,7 @@ const items = [
     jobTitle: 'Staff Machine Learning Intern, Health',
     company: 'Endimension LLC',
     startDate: '2024-04-01',
-    endDate: '',
+    endDate: '2024-08-01',
     location: 'Remote - Mumbai, India',
   },
   {

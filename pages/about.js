@@ -84,37 +84,37 @@ function About(props) {
           priority
         />
       </Section>
-      <Section>
-        <Paragraph
-          css={{
-            textAlign: 'justify',
-            marginTop: '16px',
-            '@bp2': { marginTop: '-6px' },
-          }}
-        >
-          <strong>Hey, I'm Himansh Mudigonda</strong>
-          <Pronunciation />
-          I'm a CS graduate student at Arizona State University (ASU)
-          <strong> specializing in Artificial Intelligence</strong>.
-        </Paragraph>
-        <Paragraph
-          css={{
-            textAlign: 'justify',
-            marginTop: '16px',
-            '@bp2': { marginTop: '-6px' },
-          }}
-        >
-          I am honored to have been selected as a recipient of the{' '}
-          <strong>Herbold ASU Graduate Scholarship</strong> and the{' '}
-          <strong>ASU Engineering Graduate Fellowship</strong>. My passion lies
-          in advancing the boundaries of <strong>machine learning</strong>. When
-          not immersed in coding or experimentation, I engage in various
-          activities, including extensive websurfing for the perfect wallpaper,
-          fueled by <strong>coffee</strong>, playing the <strong>guitar</strong>
-          , solving <strong>Rubik’s cubes</strong>, and hiking up the{' '}
-          <strong>iconic ‘A’ Mountain</strong>.
-        </Paragraph>
-      </Section>
+<Section>
+  <Paragraph
+    css={{
+      textAlign: 'justify',
+      marginTop: '16px',
+      '@bp2': { marginTop: '-6px' },
+    }}
+  >
+    <strong>Hi, I'm Himansh Mudigonda</strong>
+    <Pronunciation />
+    I'm a Computer Science graduate student at Arizona State University (ASU),
+    <strong> specializing in Artificial Intelligence, Machine Learning, and Distributed Systems</strong>.
+  </Paragraph>
+  <Paragraph
+    css={{
+      textAlign: 'justify',
+      marginTop: '16px',
+      '@bp2': { marginTop: '-6px' },
+    }}
+  >
+    My expertise lies in developing <strong> scalable ML pipelines</strong>, optimizing
+    <strong> transformer architectures</strong>, and deploying <strong> cloud-native AI solutions</strong>.
+    I have hands-on experience with <strong> LLM fine-tuning</strong>, <strong> MLOps automation</strong>,
+    and <strong> real-time inference</strong>. In my free time, I dive into
+    <strong> generative AI experiments</strong>, tweak <strong> Linux kernels</strong> for performance,
+    or challenge myself with <strong> speed-solving algorithms</strong> for Rubik’s cubes. When I’m not
+    working with code, you’ll find me crafting melodies on my <strong> guitar</strong> or exploring new
+    trails up the <strong> iconic ‘A’ Mountain</strong>, fueled by an endless quest for the
+    <strong> perfect brew of coffee</strong>.
+  </Paragraph>
+</Section>
     </Container>
   )
 

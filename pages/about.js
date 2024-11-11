@@ -17,7 +17,7 @@ export async function getStaticProps() {
   const meta = {
     title: 'About // Himansh Mudigonda',
     description:
-      'Himansh Mudigonda is a high-achieving graduate student in Computer Science, recognized for his academic excellence and passion for machine learning. He has demonstrated his ability to innovate through impactful projects, including the development of a groundbreaking non-invasive blood glucose detection model and achieving state-of-the-art results in chest X-ray disease prediction. He is a driven learner with a strong command of programming languages, machine learning frameworks, and cloud technologies, positioning him for continued success in the field.',
+      'Himansh Mudigonda is a Computer Science graduate student with deep expertise in Artificial Intelligence, Machine Learning, and Distributed Systems. He specializes in fine-tuning large-scale language and vision models, optimizing deep learning pipelines, and building scalable, cloud-native AI solutions. Proficient in frameworks like PyTorch, TensorFlow, and LangChain, Himansh excels in MLOps, distributed training, and real-time inference. His technical toolkit includes transformer architectures, ensemble learning, graph-based models, and uncertainty quantification techniques. With a strong foundation in cloud platforms such as AWS, GCP, and Azure, he is adept at designing and deploying robust, high-performance machine learning systems tailored to solve complex, real-world problems.',
     tagline: 'Innovate. Learn. Excel.',
     primaryColor: 'white',
     secondaryColor: 'red',

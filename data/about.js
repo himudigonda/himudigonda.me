@@ -1,12 +1,5 @@
 const items = [
   {
-    jobTitle: 'Research Assistant, Reinforcement Learning',
-    company: 'Professor Shaofeng Zou',
-    startDate: '2024-09-19',
-    endDate: '',
-    location: 'Arizona State University, Tempe, USA',
-  },
-  {
     jobTitle: 'Staff Machine Learning Intern, Health',
     company: 'Endimension LLC',
     startDate: '2024-04-01',

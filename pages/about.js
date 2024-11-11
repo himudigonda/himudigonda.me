@@ -7,7 +7,8 @@ import copyBioIcon from '../public/static/icons/copy-bio.json'
 import downloadIcon from '../public/static/icons/download.json'
 import Head from 'next/head'
 import Image from 'next/image'
-import Lottie from 'lottie-react'
+import dynamic from 'next/dynamic';
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 import Pronunciation from '../components/Pronunciation'
 import stripHtml from '../lib/strip-html'
 import Toast from '../components/Toast'

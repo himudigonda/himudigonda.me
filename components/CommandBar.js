@@ -12,7 +12,8 @@ import {
   KBarSearch,
   KBarResults,
 } from 'kbar'
-import Lottie from 'lottie-react'
+import dynamic from 'next/dynamic';
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 import experienceIcon from '../public/static/icons/experience.json'
 import downloadIcon from '../public/static/icons/download.json'
 import honorsIcon from '../public/static/icons/honors.json'

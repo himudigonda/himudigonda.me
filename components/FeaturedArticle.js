@@ -2,7 +2,8 @@ import { styled } from '../stitches.config'
 import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import readingTime from 'reading-time'
-import Lottie from 'lottie-react'
+import dynamic from 'next/dynamic';
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 export default function FeaturedArticle(props) {
   const stats = readingTime(props.content)

@@ -21,9 +21,9 @@ export async function getStaticProps() {
 function Projects(props) {
   const renderFeatured = () => {
     const featured = [
-      'TriPendulum Dynamics',
-      'x-of-Thought',
-      'Fake-or-Real (FoR) Speech',
+      'Ensemble-UQ-LLM',
+      'MastoGraph - Mastodon',
+      'x-of-Thought Reasoning',
       'OpenForensics-DeepFake',
     ]
 

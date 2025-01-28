@@ -21,10 +21,10 @@ export async function getStaticProps() {
 function Projects(props) {
   const renderFeatured = () => {
     const featured = [
-      'Ensemble-UQ-LLM',
-      'MastoGraph - Mastodon',
-      'x-of-Thought Reasoning',
-      'OpenForensics-DeepFake',
+      'UnderScoreAI',
+      'ChessAI',
+      'LLao1',
+      'Reasonify-Cot-FT',
     ]
 
     return items

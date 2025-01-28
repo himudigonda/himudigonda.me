@@ -1,17 +1,52 @@
 const items = [
   {
-    year: '2024',
+    year: '2025',
     projects: [
       {
-        title: 'UnderScore AI',
+        title: 'UnderScoreAI',
         description:
           'A multi-agentic AI framework exclusively for the Apple ecosystem, seamlessly interlacing with Health, Calendar, Reminders, Notes, and other native apps to assist users with secure, private data analysis in everyday tasks.',
-        url: '', // Replace with actual URL
+        url: '',
         active: true,
         icon: 'resend',
         stats:
           'PyTorch, LangChain, CoreML, ONNX Runtime, FastAPI, Swift, Docker, Kubernetes, Transformers, Accelerate, Optuna, Pydantic, PEFT/LoRA, Weights & Biases, HuggingFace',
       },
+      {
+        title: 'ChessAI',
+        description:
+          'An adaptive, intelligence-driven Chess AI built for mastery and personalization—trained on historical and modern games, dynamically analyzing moves, strategies, and player behavior to provide a deeply tailored and evolving challenge for every user.',
+        url: 'https://github.com/himudigonda/ChessAI',
+        active: true,
+        icon: 'resend',
+        stats:
+          'Python, PyTorch, Flask, React, NumPy, Chess, Material-UI, Dnd-Kit, TensorBoard, Stockfish Engine, Chess Engine API',
+      },     
+      {
+        title: 'LLao1',
+        description:
+          'A transparent, multi-modal AI reasoning agent leveraging step-by-step logic, powerful tools, and Large Language Models (LLMs) via Ollama to tackle complex, iterative, and self-correcting tasks with explainable precision.',
+        url: 'https://github.com/himudigonda/LLao1',
+        active: true,
+        icon: 'resend',
+        stats:
+          'Python, Streamlit, Ollama, Hugging Face, Transformers, Exa API, Accelerate, Torch, PIL, JSON, Exa-py, PhiData.',
+      },     
+      {
+        title: 'Reasonify-Cot-FT',
+        description:
+          'A modular framework for fine-tuning and evaluating large language models with Chain-of-Thought reasoning, optimizing dataset utilization, training, and distributed inference for advanced, adaptive intelligence.',
+        url: 'https://github.com/himudigonda/Reasonify-Cot-FT',
+        active: true,
+        icon: 'resend',
+        stats:
+          'Python, Transformers, PyTorch, Accelerate, Hugging Face Hub, Pydantic, Datasets, PEFT/LoRA, Weights & Bias, CUDA, Shell Scripting',
+      },     
+    ],
+  },
+  {
+    year: '2024',
+    projects: [
       {
         title: 'Ensemble-UQ-LLM',
         description:

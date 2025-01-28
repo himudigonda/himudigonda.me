@@ -48,12 +48,6 @@ function Reminder(props) {
           6. <strong>Inclusivity:</strong> I believe technology should be accessible to everyone. Inclusivity is at the core of the solutions I create, ensuring that they are equitable and serve a diverse range of users, regardless of their background or circumstances.
         </p>
         <p>
-          7. <strong>Resilience:</strong> Challenges are inevitable, but resilience is what transforms obstacles into opportunities. I approach problems with determination, adaptability, and a willingness to reassess and reframe. For me, resilience is about continuously evolving and finding solutions, no matter the difficulty.
-        </p>
-        <p>
-          8. <strong>Ethical Responsibility:</strong> Technology must be trustworthy and ethical. I prioritize privacy-first design and strive to build systems that respect user data and promote fairness. For me, it’s not just about what technology can do; it’s about doing it responsibly and sustainably.
-        </p>
-        <p>
           <strong><em>- by Himansh Mudigonda</em></strong>
         </p>
       </Box>

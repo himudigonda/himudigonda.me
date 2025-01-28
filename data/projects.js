@@ -3,6 +3,16 @@ const items = [
     year: '2024',
     projects: [
       {
+        title: 'UnderScore AI',
+        description:
+          'A multi-agentic AI framework exclusively for the Apple ecosystem, seamlessly interlacing with Health, Calendar, Reminders, Notes, and other native apps to assist users with secure, private data analysis in everyday tasks.',
+        url: '', // Replace with actual URL
+        active: true,
+        icon: 'resend',
+        stats:
+          'PyTorch, LangChain, CoreML, ONNX Runtime, FastAPI, Swift, Docker, Kubernetes, Transformers, Accelerate, Optuna, Pydantic, PEFT/LoRA, Weights & Biases, HuggingFace',
+      },
+      {
         title: 'Ensemble-UQ-LLM',
         description:
           'Engineered a scalable framework for training ensemble models leveraging LLaMA architecture, incorporating Low-Rank Adaptation (LoRA) for efficient fine-tuning, and providing advanced uncertainty metrics including variance, entropy, and mutual information for binary classification tasks.',

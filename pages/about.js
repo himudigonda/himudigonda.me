@@ -97,12 +97,12 @@ function About(props) {
             '@bp2': { marginTop: '-6px' },
           }}
         >
-          <strong>Hi, I'm Himansh Mudigonda</strong>
+         <strong> Hi, I'm Himansh Mudigonda  </strong>  
           <Pronunciation />
-          I design <strong>high-performance, scalable AI systems</strong> that bridge research and production.
-          Specializing in <strong>Machine Learning, Large Language Models, and Distributed Systems</strong>,
-          I focus on building <strong>robust ML pipelines, optimizing transformer architectures,
-            and deploying cloud-native AI solutions</strong> that don’t just function—they perform at scale.
+          I design  <strong>  high-performance, scalable AI systems  </strong>  that bridge research and production.
+          Specializing in  <strong>  Machine Learning, Large Language Models, and Distributed Systems  </strong>  ,
+          I focus on building  <strong>  robust ML pipelines, optimizing transformer architectures,
+            and deploying cloud-native AI solutions  </strong>  that don’t just function—they perform at scale.
         </Paragraph>
         <Paragraph
           css={{
@@ -111,14 +111,14 @@ function About(props) {
             '@bp2': { marginTop: '-6px' },
           }}
         >
-          My work revolves around <strong>LLM fine-tuning, MLOps automation, and real-time inference</strong>,
+          My work revolves around  <strong>  LLM fine-tuning, MLOps automation, and real-time inference  </strong>  ,
           ensuring AI systems are efficient, ethical, and production-ready. I thrive in environments where
-          <strong>precision, scalability, and impact</strong> matter—whether it’s optimizing
-          <strong>large-scale AI deployments</strong> or solving <strong>complex real-world challenges</strong>.
-          Beyond code, I push the boundaries of <strong>generative AI</strong>, fine-tune <strong>Linux kernels</strong>
-          for performance, and experiment with <strong>speed-solving algorithms</strong>. When I’m not working on AI,
-          you’ll find me hiking new trails, crafting melodies on my <strong>guitar</strong>, or seeking the
-          <strong>perfect brew of coffee</strong>.
+           <strong>  precision, scalability, and impact  </strong>  matter—whether it’s optimizing
+           <strong>  large-scale AI deployments  </strong>  or solving  <strong>  complex real-world challenges  </strong>  .
+          Beyond code, I push the boundaries of  <strong>  generative AI  </strong>  , fine-tune  <strong>  Linux kernels  </strong>  
+          for performance, and experiment with  <strong>  speed-solving algorithms  </strong>  . When I’m not working on AI,
+          you’ll find me hiking new trails, crafting melodies on my  <strong>  guitar  </strong>  , or seeking the
+           <strong>  perfect brew of coffee  </strong>  .
         </Paragraph>
       </Section>
 

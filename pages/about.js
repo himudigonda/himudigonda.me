@@ -17,7 +17,7 @@ export async function getStaticProps() {
   const meta = {
     title: 'About // Himansh Mudigonda',
     description:
-      'Himansh Mudigonda is a Computer Science graduate student with deep expertise in Artificial Intelligence, Machine Learning, and Distributed Systems. He specializes in fine-tuning large-scale language and vision models, optimizing deep learning pipelines, and building scalable, cloud-native AI solutions. Proficient in frameworks like PyTorch, TensorFlow, and LangChain, Himansh excels in MLOps, distributed training, and real-time inference. His technical toolkit includes transformer architectures, ensemble learning, graph-based models, and uncertainty quantification techniques. With a strong foundation in cloud platforms such as AWS, GCP, and Azure, he is adept at designing and deploying robust, high-performance machine learning systems tailored to solve complex, real-world problems.',
+      'Himansh Mudigonda is a Machine Learning Engineer with expertise in LLM fine-tuning, scalable ML pipelines, and distributed AI systems. He specializes in deploying cloud-native AI solutions, optimizing transformer architectures, and building high-performance real-time inference systems. His technical strengths include MLOps automation, ensemble learning, multimodal deep learning, and knowledge graphs. With hands-on experience in PyTorch, TensorFlow, LangChain, ONNX Runtime, FastAPI, and Kubernetes, he has developed state-of-the-art AI models for healthcare, edge AI, and large-scale enterprise applications. His cloud expertise spans AWS, GCP, and Databricks, with a strong foundation in CI/CD, containerization, and distributed training. Himansh has contributed to cutting-edge research, including non-invasive blood glucose detection and cognitive AI models, publishing in Nature Journal’s Scientific Reports and IEEE conferences. He is passionate about building AI systems that are efficient, explainable, and human-centered, ensuring innovation aligns with real-world impact, ethical AI, and user privacy.',
     tagline: 'Innovate. Learn. Excel.',
     primaryColor: 'white',
     secondaryColor: 'red',
@@ -84,37 +84,47 @@ function About(props) {
           priority
         />
       </Section>
-<Section>
-  <Paragraph
-    css={{
-      textAlign: 'justify',
-      marginTop: '16px',
-      '@bp2': { marginTop: '-6px' },
-    }}
-  >
-    <strong>Hi, I'm Himansh Mudigonda</strong>
-    <Pronunciation />
-    I'm a Computer Science graduate student at Arizona State University (ASU),
-    <strong> specializing in Artificial Intelligence, Machine Learning, and Distributed Systems</strong>.
-  </Paragraph>
-  <Paragraph
-    css={{
-      textAlign: 'justify',
-      marginTop: '16px',
-      '@bp2': { marginTop: '-6px' },
-    }}
-  >
-    My expertise lies in developing <strong> scalable ML pipelines</strong>, optimizing
-    <strong> transformer architectures</strong>, and deploying <strong> cloud-native AI solutions</strong>.
-    I have hands-on experience with <strong> LLM fine-tuning</strong>, <strong> MLOps automation</strong>,
-    and <strong> real-time inference</strong>. In my free time, I dive into
-    <strong> generative AI experiments</strong>, tweak <strong> Linux kernels</strong> for performance,
-    or challenge myself with <strong> speed-solving algorithms</strong> for Rubik’s cubes. When I’m not
-    working with code, you’ll find me crafting melodies on my <strong> guitar</strong> or exploring new
-    trails up the <strong> iconic ‘A’ Mountain</strong>, fueled by an endless quest for the
-    <strong> perfect brew of coffee</strong>.
-  </Paragraph>
-</Section>
+
+
+
+
+
+      <Section>
+        <Paragraph
+          css={{
+            textAlign: 'justify',
+            marginTop: '16px',
+            '@bp2': { marginTop: '-6px' },
+          }}
+        >
+          <strong>Hi, I'm Himansh Mudigonda</strong>
+          <Pronunciation />
+          I design <strong>high-performance, scalable AI systems</strong> that bridge research and production.
+          Specializing in <strong>Machine Learning, Large Language Models, and Distributed Systems</strong>,
+          I focus on building <strong>robust ML pipelines, optimizing transformer architectures,
+            and deploying cloud-native AI solutions</strong> that don’t just function—they perform at scale.
+        </Paragraph>
+        <Paragraph
+          css={{
+            textAlign: 'justify',
+            marginTop: '16px',
+            '@bp2': { marginTop: '-6px' },
+          }}
+        >
+          My work revolves around <strong>LLM fine-tuning, MLOps automation, and real-time inference</strong>,
+          ensuring AI systems are efficient, ethical, and production-ready. I thrive in environments where
+          <strong>precision, scalability, and impact</strong> matter—whether it’s optimizing
+          <strong>large-scale AI deployments</strong> or solving <strong>complex real-world challenges</strong>.
+          Beyond code, I push the boundaries of <strong>generative AI</strong>, fine-tune <strong>Linux kernels</strong>
+          for performance, and experiment with <strong>speed-solving algorithms</strong>. When I’m not working on AI,
+          you’ll find me hiking new trails, crafting melodies on my <strong>guitar</strong>, or seeking the
+          <strong>perfect brew of coffee</strong>.
+        </Paragraph>
+      </Section>
+
+
+
+
     </Container>
   )
 
@@ -128,7 +138,7 @@ function About(props) {
 
     return (
       <div>
-        <p>A more formal definition.</p>
+        <p>A formal definition.</p>
         <blockquote>
           <Paragraph
             css={{

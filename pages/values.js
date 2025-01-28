@@ -7,8 +7,8 @@ export async function getStaticProps() {
   const meta = {
     title: 'Values // Himansh Mudigonda',
     description:
-      'Values are the guiding principles that shape our lives. They are the compass that directs our behavior and actions. They influence our decisions, our relationships, and our sense of purpose. They are the foundation of our character and the essence of who we are. In this section, I share the values that define me and guide me in my journey.',
-    tagline: 'The Foundation Stone',
+      'Values shape our actions, decisions, and the impact we make in the world. They are the foundation of who we are. In this section, I share the principles that guide me through every project and challenge.',
+    tagline: 'The Essence of Innovation',
     primaryColor: 'white',
     secondaryColor: 'purple',
   }
@@ -17,7 +17,7 @@ export async function getStaticProps() {
 }
 
 function Reminder(props) {
-  const { title, description, image } = props
+  const { title, description } = props
 
   return (
     <>
@@ -30,26 +30,33 @@ function Reminder(props) {
       </Head>
       <Box css={{ textAlign: 'justify' }}>
         <p>
-          1. <strong>Ditch the ego, pal!</strong> It's not your friend. It's like carrying a grumpy cat around all day. Let it go, and feel the freedom!
+          1. <strong>Real-World Impact:</strong> I believe technology should solve tangible problems and improve lives. My work is always driven by the question, "How can this create real, meaningful change?" Every project I undertake is an opportunity to make a difference, whether it’s through AI-powered healthcare solutions or personalized learning systems.
         </p>
         <p>
-
-          2. <strong>Acceptance isn't waving the white flag, it's opening the door.</strong> It's like saying, "Hey world, I get it. Let's dance!" That's where the real party starts.
+          2. <strong>Empathy:</strong> Understanding the experiences and challenges of others is essential. Empathy guides my approach to building solutions that are inclusive and user-centered, ensuring that technology is accessible and genuinely helpful to all users.
         </p>
         <p>
-
-          3. <strong>You've got ♾️ energy inside you!</strong> Don't let those doubts dim your shine. Believe in yourself, and watch amazing things happen.
+          3. <strong>Learning and Growth:</strong> I see every challenge as a learning opportunity. For me, growth is a continuous journey, and each failure or setback is a chance to adapt, innovate, and push boundaries. This mindset fuels my drive to explore new technologies and continuously improve.
         </p>
         <p>
-          4. <strong>What-When-How</strong> Do what you love, when you want, how you want. It's that simple. Don't let your ego boss you around, do what makes YOU happy.
+          4. <strong>Collaboration:</strong> I value diverse perspectives and the power of teamwork. Great solutions are built through sharing ideas, aligning strengths, and learning from each other. I thrive in cross-functional teams, bridging gaps between different disciplines to achieve common goals.
         </p>
         <p>
-          5. <strong>Tools = Respect = Tools</strong> Treat your tools right; they're your sidekicks! Whether it's a laptop, a pen, a stethoscope, a camera, or a shovel. Show them some love.
+          5. <strong>Attention to Detail:</strong> In every project, I focus on the finer details that make a significant difference. Whether it’s fine-tuning a machine learning model or crafting a user experience, I believe excellence is achieved by refining and polishing until the final product is truly impactful.
+        </p>
+        <p>
+          6. <strong>Inclusivity:</strong> I believe technology should be accessible to everyone. Inclusivity is at the core of the solutions I create, ensuring that they are equitable and serve a diverse range of users, regardless of their background or circumstances.
+        </p>
+        <p>
+          7. <strong>Resilience:</strong> Challenges are inevitable, but resilience is what transforms obstacles into opportunities. I approach problems with determination, adaptability, and a willingness to reassess and reframe. For me, resilience is about continuously evolving and finding solutions, no matter the difficulty.
+        </p>
+        <p>
+          8. <strong>Ethical Responsibility:</strong> Technology must be trustworthy and ethical. I prioritize privacy-first design and strive to build systems that respect user data and promote fairness. For me, it’s not just about what technology can do; it’s about doing it responsibly and sustainably.
         </p>
         <p>
           <strong><em>- by Himansh Mudigonda</em></strong>
         </p>
-      </Box >
+      </Box>
     </>
   )
 }

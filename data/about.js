@@ -14,10 +14,10 @@ const items = [
     location: 'Arizona State University, Tempe, USA',
   },
   {
-    jobTitle: 'Computer Vision Researcher',
-    company: 'Professor Jianming Liang',
-    startDate: '2023-09-01',
-    endDate: '2024-09-01',
+    jobTitle: 'Graduate Research Assistant',
+    company: 'Imaging Informatics Research Lab',
+    startDate: '2023-11-01',
+    endDate: '2024-05-01',
     location: 'Arizona State University, Tempe, USA',
   },
   {

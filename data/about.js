@@ -23,7 +23,7 @@ const items = [
   {
     jobTitle: 'Machine Learning Researcher',
     company: 'SRM Advanced Electronics Laboratory',
-    startDate: '2022-10-01',
+    startDate: '2022-06-01',
     endDate: '2023-07-31',
     location: 'SRM University, Amaravathi, India',
   },

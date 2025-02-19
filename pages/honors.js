@@ -11,7 +11,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Honors// Himansh Mudigonda',
-      tagline: 'Respect. Power. Banana.',
+      tagline: 'Respect. Honor. Excellence.',
       image: '/static/images/articles-bw.jpg',
       primaryColor: 'white',
       secondaryColor: 'blue',

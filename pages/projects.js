@@ -24,7 +24,7 @@ function Projects(props) {
       'UnderScoreAI',
       'ChessAI',
       'LLao1',
-      'Reasonify-Cot-FT',
+      'LogicMind',
     ]
 
     return items

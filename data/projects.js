@@ -21,7 +21,7 @@ const items = [
         icon: 'resend',
         stats:
           'Python, PyTorch, Flask, React, NumPy, Chess, Material-UI, Dnd-Kit, TensorBoard, Stockfish Engine, Chess Engine API',
-      },     
+      },
       {
         title: 'LLao1',
         description:
@@ -31,17 +31,17 @@ const items = [
         icon: 'resend',
         stats:
           'Python, Streamlit, Ollama, Hugging Face, Transformers, Exa API, Accelerate, Torch, PIL, JSON, Exa-py, PhiData.',
-      },     
+      },
       {
-        title: 'Reasonify-Cot-FT',
+        title: 'LogicMind',
         description:
           'A modular framework for fine-tuning and evaluating large language models with Chain-of-Thought reasoning, optimizing dataset utilization, training, and distributed inference for advanced, adaptive intelligence.',
-        url: 'https://github.com/himudigonda/Reasonify-Cot-FT',
+        url: 'https://github.com/himudigonda/LogicMind',
         active: true,
         icon: 'resend',
         stats:
           'Python, Transformers, PyTorch, Accelerate, Hugging Face Hub, Pydantic, Datasets, PEFT/LoRA, Weights & Bias, CUDA, Shell Scripting',
-      },     
+      },
     ],
   },
   {
@@ -60,7 +60,7 @@ const items = [
       {
         title: 'MastoGraph - Mastodon',
         description:
-        'Developed a scalable social media analysis framework to perform real-time data crawling, NLP-based toxicity classification, and network analysis, utilizing advanced graph algorithms like PageRank and modularity for community detection and influence mapping.',
+          'Developed a scalable social media analysis framework to perform real-time data crawling, NLP-based toxicity classification, and network analysis, utilizing advanced graph algorithms like PageRank and modularity for community detection and influence mapping.',
         url: 'https://github.com/himudigonda/mastograph',
         active: true,
         icon: 'resend',
@@ -188,6 +188,16 @@ const items = [
         icon: 'resend',
         stats:
           'Python, TensorFlow, OpenCV, Dlib, Face Recognition',
+      },
+      {
+        title: 'NeuroLearn',
+        description:
+          'A face recognition-based attendance system using OpenCV and Dlib.',
+        url: 'https://github.com/himudigonda',
+        active: true,
+        icon: 'resend',
+        stats:
+          'Python, TensorFlow, PyTorch, Scikit-learn, GloVe Embeddings, NLTK / SpaCy, MNE-Python, SciPy, PostgreSQL, MongoDB, AWS ',
       },
     ],
   },

@@ -39,7 +39,7 @@ const items = [
     jobTitle: 'Artificial Intelligence Researcher',
     company: 'NeXtTech LLC',
     startDate: '2020-11-01',
-    endDate: '2022-10-31',
+    endDate: '2022-11-31',
     location: 'Chennai, India',
   },
 ]

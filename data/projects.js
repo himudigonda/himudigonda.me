@@ -3,15 +3,95 @@ const items = [
     year: '2025',
     projects: [
       {
-        title: 'UnderScoreAI',
+        title: 'CollabWrite',
         description:
-          'A multi-agentic AI framework exclusively for the Apple ecosystem, seamlessly interlacing with Health, Calendar, Reminders, Notes, and other native apps to assist users with secure, private data analysis in everyday tasks.',
+          'A real-time AI-powered collaborative editor enabling multi-user editing with Yjs CRDTs and WebSockets; integrated context-aware RAG-based AI writing assistance using OpenAI GPT-4 and Meta Llama 4 Maverick for content generation and refinement, reducing ideation-to-prototype time by 45%.',
+        url: '',
+        active: true,
+        icon: 'resend',
+        stats:
+          'Yjs, WebSockets, FastAPI, LangChain, Redis, PostgreSQL, Next.js, Tailwind CSS, Socket.IO, GPT-4, Llama 4 Maverick',
+      },
+      {
+        title: '_AI (Underscore AI)',
+        description:
+          'An end-to-end AI assistant for the Apple ecosystem, built as a multi-agent framework focusing on data privacy; integrates MCP Servers with tool and function calling for secure analysis of Health, Calendar, Texts, Notes, and Reminders on-device.',
         url: '',
         active: true,
         icon: 'resend',
         stats:
           'PyTorch, LangChain, CoreML, ONNX Runtime, FastAPI, Swift, Docker, Kubernetes, Transformers, Accelerate, Optuna, Pydantic, PEFT/LoRA, Weights & Biases, HuggingFace',
       },
+      {
+        title: 'FaceDetectX',
+        description:
+          'A real-time fraud detection pipeline using PySpark, PostgresSQL/ML, EvaDB, and Velox for multi-source metadata and image data processing; integrated a CNN-transformer ensemble model within the Spark environment, achieving sub-50ms latency with ONNX optimizations.',
+        url: 'https://github.com/himudigonda/FraudDetectX',
+        active: true,
+        icon: 'resend',
+        stats:
+          'PySpark, PostgresSQL/ML, EvaDB, Velox, CNN, Transformers, ONNX, Distributed Processing, Real-Time Inference',
+      },
+      {
+        title: 'Doppelgangerify',
+        description:
+          'Fine-tuned FLUX.1-Schnell and FLUX.1-Dev diffusion models using a LoRA pipeline on a custom dataset of 28 images to enhance image quality and subject understanding; evaluated improvements with FID and perceptual similarity metrics.',
+        url: '',
+        active: true,
+        icon: 'resend',
+        stats:
+          'LoRA, FLUX.1-Schnell, FLUX.1-Dev, PyTorch, Hugging Face Diffusers, ONNX, FID, Perceptual Similarity Metrics, Fine-Tuning',
+      },
+      {
+        title: 'Gemma-3 Reasoning Training with GRPO',
+        description:
+          'Fine-tuned the Gemma-3 model using the GRPO (Generative Reward Policy Optimization) framework to enhance reasoning abilities, leveraging the GSM8k dataset for training. Optimized model performance with GPU acceleration and hyperparameter tuning.',
+        url: 'https://github.com/himudigonda/reasoning-gemma3',
+        active: true,
+        icon: 'resend',
+        stats:
+          'Python, GRPO, Gemma-3, PyTorch, Transformers, CUDA, YAML, Dataset Library, CLI, Configurable Training',
+      },
+      {
+        title: 'SayItOut',
+        description:
+          'A macOS application that adds a system-wide context menu for text-to-speech (TTS) functionality, allowing users to right-click on selected text and convert it to speech. Integrates a FastAPI backend for processing and seamless playback.',
+        url: 'https://github.com/himudigonda/SayItOut',
+        active: true,
+        icon: 'resend',
+        stats:
+          'macOS, Swift, FastAPI, Uvicorn, Text-to-Speech, Audio Processing, Python, Soundfile, Context Menu Integration',
+      },
+      {
+        title: 'SonicSherlock',
+        description:
+          'A high-performance audio recognition system inspired by Shazam, designed to identify songs from short audio snippets by generating unique audio fingerprints. Utilizes Librosa for spectrogram generation (STFT), SciPy for peak detection, and combinatorial hashing for robust fingerprinting.',
+        url: 'https://github.com/himudigonda/SonicSherlock',
+        active: true,
+        icon: 'resend',
+        stats:
+          'Python, FastAPI, Gradio, Librosa, PostgreSQL, Audio Fingerprinting, Real-Time Matching, Signal Processing, API Development',
+      },
+      {
+        title: 'Forkast - AI-Powered Nutrition Assistant',
+        description:
+          'An AI-driven tool for scanning food barcodes and retrieving nutritional data from Open Food Facts. Integrates a conversational AI powered by the Llama 3.2: 3B Instruct Q8_0 model to explain health impacts, offering personalized dietary insights.',
+        url: 'https://github.com/himudigonda/Forkast',
+        active: true,
+        icon: 'resend',
+        stats:
+          'Python, FastAPI, Streamlit, Open Food Facts API, Ollama, Llama 3.2, Barcode Scanning, Nutrition Data, Conversational AI Integration',
+      },
+      {
+        title: 'Beast Watch - AI-Powered Wildlife Detection and Emergency Response System',
+        description:
+          'An AI-driven system using Google Gemini AI and YOLO models to identify wild animals from images and provide real-time emergency guidance. Aims to mitigate human-animal conflict by detecting dangerous wildlife and issuing alerts to nearby individuals and authorities.',
+        url: 'https://github.com/himudigonda/BeastWatch',
+        active: true,
+        icon: 'resend',
+        stats:
+          'Python, Google Gemini AI, YOLO, Computer Vision, FastAPI, Jupyter, SMS Alerts, Real-Time Monitoring, Emergency Response',
+      },  
       {
         title: 'ChessAI',
         description:

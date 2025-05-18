@@ -21,10 +21,10 @@ export async function getStaticProps() {
 function Projects(props) {
   const renderFeatured = () => {
     const featured = [
-      'UnderScoreAI',
-      'ChessAI',
-      'LLao1',
-      'LogicMind',
+      'CollabWrite',
+      '_AI (Underscore AI)',
+      'FaceDetectX',
+      'Doppelgangerify',
     ]
 
     return items

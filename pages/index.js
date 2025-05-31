@@ -7,7 +7,7 @@ import { PostMain, PostContent, PostContainer } from '../components/Post'
 import { Wrapper } from '../components/Wrapper'
 import { getPersonJsonLd } from '../lib/json-ld'
 
-import { getAllFilesFrontMatter } from '../lib/blog'
+// import { getAllFilesFrontMatter } from '../lib/blog' // Removed as it's only used for posts
 import projectsData from '../data/projects'
 import publicationsData from '../data/publications'
 import awardsData from '../data/awards'
@@ -17,14 +17,14 @@ import certificationsData from '../data/certifications'
 import AboutSection from '../components/sections/AboutSection.js'
 import ExperienceSection from '../components/sections/ExperienceSection.js'
 import ProjectsSection from '../components/sections/ProjectsSection.js'
-import ArticlesSection from '../components/sections/ArticlesSection.js'
+// import ArticlesSection from '../components/sections/ArticlesSection.js' // Articles section removed
 import HonorsSection from '../components/sections/HonorsSection.js'
 import CertificationsSection from '../components/sections/CertificationsSection.js'
 import PublicationsSection from '../components/sections/PublicationsSection.js'
 import ValuesSection from '../components/sections/ValuesSection.js'
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('articles')
+  // const posts = await getAllFilesFrontMatter('articles') // Articles section removed
   const projects = projectsData
   const publications = publicationsData
   const awards = awardsData
@@ -37,7 +37,7 @@ export async function getStaticProps() {
       description: 'Machine Learning, Natural Langauge Processing, Computer Vision, GenerativeAI ',
       primaryColor: '#ffffff',
       secondaryColor: 'orange',
-      posts,
+      // posts, // Articles section removed
       projects,
       publications,
       awards,
@@ -48,8 +48,8 @@ export async function getStaticProps() {
       aboutTagline: 'Innovate. Learn. Excel.',
       aboutPrimaryColor: 'white',
       aboutSecondaryColor: 'red',
-      articlesTitle: 'Articles // Himansh Mudigonda',
-      articlesDescription: "Here are some articles I've written.",
+      // articlesTitle: 'Articles // Himansh Mudigonda', // Articles section removed
+      // articlesDescription: "Here are some articles I've written.", // Articles section removed
       projectsTitle: 'Projects // Himansh Mudigonda',
       projectsDescription: "Here are some of the projects I've worked on.",
       publicationsTitle: 'Publications // Himansh Mudigonda',
@@ -79,9 +79,10 @@ const Home = styled(PostMain, {
 export default function Index(props) {
   const {
     title, description, primaryColor, secondaryColor,
-    posts, projects, publications, awards, scholarships, certifications,
+    // posts, // Articles section removed
+    projects, publications, awards, scholarships, certifications,
     aboutTitle, aboutDescription, aboutTagline, aboutPrimaryColor, aboutSecondaryColor,
-    articlesTitle, articlesDescription,
+    // articlesTitle, articlesDescription, // Articles section removed
     projectsTitle, projectsDescription,
     publicationsTitle, publicationsDescription,
     honorsTitle, honorsDescription,
@@ -89,7 +90,7 @@ export default function Index(props) {
   } = props
 
   const aboutProps = { title: aboutTitle, description: aboutDescription, tagline: aboutTagline, primaryColor: aboutPrimaryColor, secondaryColor: aboutSecondaryColor };
-  const articlesProps = { posts, title: articlesTitle, description: articlesDescription, primaryColor: 'cyan', secondaryColor: 'blue' };
+  // const articlesProps = { posts, title: articlesTitle, description: articlesDescription, primaryColor: 'cyan', secondaryColor: 'blue' }; // Articles section removed
   const projectsProps = { projects, title: projectsTitle, description: projectsDescription, primaryColor: 'orange', secondaryColor: 'red' };
   const publicationsProps = { publications, title: publicationsTitle, description: publicationsDescription, primaryColor: 'green', secondaryColor: 'yellow' };
   const honorsProps = { awards, scholarships, title: honorsTitle, description: honorsDescription, primaryColor: 'yellow', secondaryColor: 'orange' };
@@ -136,7 +137,7 @@ export default function Index(props) {
             <section id="about"><h2>About</h2><AboutSection {...aboutProps} /></section>
             <section id="experience"><h2>Experience</h2><ExperienceSection /></section>
             <section id="projects"><h2>Projects</h2><ProjectsSection {...projectsProps} /></section>
-            <section id="articles"><h2>Articles</h2><ArticlesSection {...articlesProps} /></section>
+            {/* <section id="articles"><h2>Articles</h2><ArticlesSection {...articlesProps} /></section> */} {/* Articles section removed */}
             <section id="publications"><h2>Publications</h2><PublicationsSection {...publicationsProps} /></section>
             <section id="honors"><h2>Honors</h2><HonorsSection {...honorsProps} /></section>
             <section id="certifications"><h2>Certifications</h2><CertificationsSection {...certificationsProps} /></section>

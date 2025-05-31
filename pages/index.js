@@ -91,7 +91,7 @@ export default function Index(props) {
 
   const aboutProps = { title: aboutTitle, description: aboutDescription, tagline: aboutTagline, primaryColor: aboutPrimaryColor, secondaryColor: aboutSecondaryColor };
   // const articlesProps = { posts, title: articlesTitle, description: articlesDescription, primaryColor: 'cyan', secondaryColor: 'blue' }; // Articles section removed
-  const projectsProps = { projects, title: projectsTitle, description: projectsDescription, primaryColor: 'orange', secondaryColor: 'red' };
+  const projectsProps = { yearGroups: projects, title: projectsTitle, description: projectsDescription, primaryColor: 'orange', secondaryColor: 'red' };
   const publicationsProps = { publications, title: publicationsTitle, description: publicationsDescription, primaryColor: 'green', secondaryColor: 'yellow' };
   const honorsProps = { awards, scholarships, title: honorsTitle, description: honorsDescription, primaryColor: 'yellow', secondaryColor: 'orange' };
   const certificationsProps = { certifications, title: certificationsTitle, description: certificationsDescription, primaryColor: 'pink', secondaryColor: 'purple' };

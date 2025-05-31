@@ -1,25 +1,25 @@
 import { styled } from '../stitches.config'
-import { useState } from 'react'
+// import { useState } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+// import { useRouter } from 'next/router'
 import { motion, AnimateSharedLayout } from 'framer-motion'
 import { useKBar } from 'kbar'
 
 export default function Navbar() {
-  const router = useRouter()
-  const pages = [
-    'Home',
-    'About',
-    'Experience',
-    'Projects',
-    'Articles',
-    'Honors',
-    // 'Contact',
-    'Certifications',
-    'Publications',
-    'Values'
-  ]
-  const [hovered, setHovered] = useState('')
+  // const router = useRouter()
+  // const pages = [
+  //   'Home',
+  //   'About',
+  //   'Experience',
+  //   'Projects',
+  //   'Articles',
+  //   'Honors',
+  //   // 'Contact',
+  //   'Certifications',
+  //   'Publications',
+  //   'Values'
+  // ]
+  // const [hovered, setHovered] = useState('')
   const { query } = useKBar()
 
 
@@ -30,7 +30,7 @@ export default function Navbar() {
           <ButtonLogo as="a">H</ButtonLogo>
         </Link>
 
-        <Nav>
+        {/* <Nav>
           <List>
             {pages.map(page => {
               const path = page === 'Home' ? '/' : `/${page.toLowerCase()}`
@@ -68,7 +68,7 @@ export default function Navbar() {
               )
             })}
           </List>
-        </Nav>
+        </Nav> */}
 
         <Aside>
           <ButtonHeader
@@ -102,15 +102,15 @@ const Header = styled('header', {
   '@bp2': { marginTop: '0' },
 })
 
-const List = styled('ul', {
-  margin: '0',
-  padding: '0',
-  listStyle: 'none',
-  display: 'inline-flex',
-  position: 'relative',
-  top: '5px',
-  '@bp1': { justifyContent: 'space-around' },
-})
+// const List = styled('ul', {
+//   margin: '0',
+//   padding: '0',
+//   listStyle: 'none',
+//   display: 'inline-flex',
+//   position: 'relative',
+//   top: '5px',
+//   '@bp1': { justifyContent: 'space-around' },
+// })
 
 const ButtonHeader = styled('div', {
   appearance: 'none',
@@ -139,14 +139,14 @@ const ButtonLogo = styled(ButtonHeader, {
   fontFamily: '$heading',
 })
 
-const Nav = styled('nav', {
-  textAlign: 'center',
-  flex: 1,
-  order: 2,
-  flexBasis: '100%',
-  '@bp2': { order: 0, flexBasis: 'initial' },
-  '@bp3': { overflowX: 'scroll', overflowY: 'hidden' },
-})
+// const Nav = styled('nav', {
+//   textAlign: 'center',
+//   flex: 1,
+//   order: 2,
+//   flexBasis: '100%',
+//   '@bp2': { order: 0, flexBasis: 'initial' },
+//   '@bp3': { overflowX: 'scroll', overflowY: 'hidden' },
+// })
 
 const Aside = styled('div', {
   display: 'flex',
@@ -155,48 +155,48 @@ const Aside = styled('div', {
   marginLeft: 'auto',
 })
 
-const Anchor = styled('a', {
-  border: 0,
-  position: 'relative',
-  '&:hover, &:focus': { opacity: 1 },
-})
+// const Anchor = styled('a', {
+//   border: 0,
+//   position: 'relative',
+//   '&:hover, &:focus': { opacity: 1 },
+// })
 
-const NavContainer = styled(motion.span, {
-  color: '$secondary',
-  cursor: 'pointer',
-  display: 'inline-block',
-  fontSize: '12px',
-  fontWeight: 500,
-  letterSpacing: '1.2px',
-  padding: '20px',
-  textDecoration: 'none',
-  textTransform: 'uppercase',
-  transition: 'color $duration ease-in-out',
-  '&:hover': {
-    color: '$primary',
-  },
-  '&::after': {
-    content: '""',
-    position: 'absolute',
-    margin: '0px auto',
-    top: '18px',
-    left: '0px',
-    right: '0px',
-    height: '1px',
-    width: '20px',
-    background: 'rgb(255, 255, 255)',
-    opacity: 0,
-    transition: 'opacity $duration ease-in-out',
-  },
-})
+// const NavContainer = styled(motion.span, {
+//   color: '$secondary',
+//   cursor: 'pointer',
+//   display: 'inline-block',
+//   fontSize: '12px',
+//   fontWeight: 500,
+//   letterSpacing: '1.2px',
+//   padding: '20px',
+//   textDecoration: 'none',
+//   textTransform: 'uppercase',
+//   transition: 'color $duration ease-in-out',
+//   '&:hover': {
+//     color: '$primary',
+//   },
+//   '&::after': {
+//     content: '""',
+//     position: 'absolute',
+//     margin: '0px auto',
+//     top: '18px',
+//     left: '0px',
+//     right: '0px',
+//     height: '1px',
+//     width: '20px',
+//     background: 'rgb(255, 255, 255)',
+//     opacity: 0,
+//     transition: 'opacity $duration ease-in-out',
+//   },
+// })
 
-const NavHovered = styled(motion.span, {
-  position: 'absolute',
-  top: '-15px',
-  left: '0',
-  right: '0',
-  background: '$hover',
-  padding: 20,
-  borderRadius: '$borderRadius',
-  zIndex: -1,
-})
+// const NavHovered = styled(motion.span, {
+//   position: 'absolute',
+//   top: '-15px',
+//   left: '0',
+//   right: '0',
+//   background: '$hover',
+//   padding: 20,
+//   borderRadius: '$borderRadius',
+//   zIndex: -1,
+// })
